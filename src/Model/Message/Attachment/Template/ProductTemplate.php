@@ -2,19 +2,19 @@
 
 declare(strict_types=1);
 
-namespace Kerox\Messenger\Model\Message\Attachment\Template;
+namespace Involix\Messenger\Model\Message\Attachment\Template;
 
-use Kerox\Messenger\Model\Message\Attachment\AbstractTemplate;
+use Involix\Messenger\Model\Message\Attachment\AbstractTemplate;
 
 class ProductTemplate extends AbstractTemplate
 {
     /**
-     * @var \Kerox\Messenger\Model\Message\Attachment\Template\Element\ProductElement[]
+     * @var \Involix\Messenger\Model\Message\Attachment\Template\Element\ProductElement[]
      */
     private $elements;
 
     /**
-     * @throws \Kerox\Messenger\Exception\InvalidArrayException
+     * @throws \Involix\Messenger\Exception\InvalidArrayException
      */
     public function __construct(array $elements)
     {
@@ -26,7 +26,7 @@ class ProductTemplate extends AbstractTemplate
     }
 
     /**
-     * @throws \Kerox\Messenger\Exception\InvalidArrayException
+     * @throws \Involix\Messenger\Exception\InvalidArrayException
      */
     public static function create(array $elements): self
     {

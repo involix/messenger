@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Kerox\Messenger\Model\Message\Attachment\Template\Receipt;
+namespace Involix\Messenger\Model\Message\Attachment\Template\Receipt;
 
 class Adjustment implements \JsonSerializable
 {
@@ -24,7 +24,7 @@ class Adjustment implements \JsonSerializable
     }
 
     /**
-     * @return \Kerox\Messenger\Model\Message\Attachment\Template\Receipt\Adjustment
+     * @return \Involix\Messenger\Model\Message\Attachment\Template\Receipt\Adjustment
      */
     public static function create(): self
     {

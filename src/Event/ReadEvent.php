@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Kerox\Messenger\Event;
+namespace Involix\Messenger\Event;
 
-use Kerox\Messenger\Model\Callback\Read;
+use Involix\Messenger\Model\Callback\Read;
 
 class ReadEvent extends AbstractEvent
 {
@@ -16,7 +16,7 @@ class ReadEvent extends AbstractEvent
     protected $timestamp;
 
     /**
-     * @var \Kerox\Messenger\Model\Callback\Read
+     * @var \Involix\Messenger\Model\Callback\Read
      */
     protected $read;
 
@@ -47,7 +47,7 @@ class ReadEvent extends AbstractEvent
     }
 
     /**
-     * @return \Kerox\Messenger\Event\ReadEvent
+     * @return \Involix\Messenger\Event\ReadEvent
      */
     public static function create(array $payload): self
     {

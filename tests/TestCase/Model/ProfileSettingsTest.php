@@ -2,18 +2,18 @@
 
 declare(strict_types=1);
 
-namespace Kerox\Messenger\Tests\TestCase\Model;
+namespace Involix\Messenger\Tests\TestCase\Model;
 
-use Kerox\Messenger\Model\Common\Button\Nested;
-use Kerox\Messenger\Model\Common\Button\Postback;
-use Kerox\Messenger\Model\Common\Button\WebUrl;
-use Kerox\Messenger\Model\ProfileSettings;
-use Kerox\Messenger\Model\ProfileSettings\Greeting;
-use Kerox\Messenger\Model\ProfileSettings\HomeUrl;
-use Kerox\Messenger\Model\ProfileSettings\IceBreakers;
-use Kerox\Messenger\Model\ProfileSettings\PaymentSettings;
-use Kerox\Messenger\Model\ProfileSettings\PersistentMenu;
-use Kerox\Messenger\Model\ProfileSettings\TargetAudience;
+use Involix\Messenger\Model\Common\Button\Nested;
+use Involix\Messenger\Model\Common\Button\Postback;
+use Involix\Messenger\Model\Common\Button\WebUrl;
+use Involix\Messenger\Model\ProfileSettings;
+use Involix\Messenger\Model\ProfileSettings\Greeting;
+use Involix\Messenger\Model\ProfileSettings\HomeUrl;
+use Involix\Messenger\Model\ProfileSettings\IceBreakers;
+use Involix\Messenger\Model\ProfileSettings\PaymentSettings;
+use Involix\Messenger\Model\ProfileSettings\PersistentMenu;
+use Involix\Messenger\Model\ProfileSettings\TargetAudience;
 use PHPUnit\Framework\TestCase;
 
 class ProfileSettingsTest extends TestCase

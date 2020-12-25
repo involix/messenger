@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Kerox\Messenger\Request;
+namespace Involix\Messenger\Request;
 
-use Kerox\Messenger\Model\ProfileSettings;
+use Involix\Messenger\Model\ProfileSettings;
 
 class ProfileRequest extends AbstractRequest
 {
@@ -35,7 +35,7 @@ class ProfileRequest extends AbstractRequest
     }
 
     /**
-     * @return array|\Kerox\Messenger\Model\ProfileSettings|null
+     * @return array|\Involix\Messenger\Model\ProfileSettings|null
      */
     protected function buildBody()
     {

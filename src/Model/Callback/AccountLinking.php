@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Kerox\Messenger\Model\Callback;
+namespace Involix\Messenger\Model\Callback;
 
 class AccountLinking
 {
@@ -41,7 +41,7 @@ class AccountLinking
     }
 
     /**
-     * @return \Kerox\Messenger\Model\Callback\AccountLinking
+     * @return \Involix\Messenger\Model\Callback\AccountLinking
      */
     public static function create(array $callbackData): self
     {

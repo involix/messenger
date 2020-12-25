@@ -2,20 +2,20 @@
 
 declare(strict_types=1);
 
-namespace Kerox\Messenger\Tests\TestCase\Api;
+namespace Involix\Messenger\Tests\TestCase\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\Handler\MockHandler;
 use GuzzleHttp\HandlerStack;
 use GuzzleHttp\Psr7\Response;
-use Kerox\Messenger\Api\Tag;
-use Kerox\Messenger\Model\Data;
+use Involix\Messenger\Api\Tag;
+use Involix\Messenger\Model\Data;
 use PHPUnit\Framework\TestCase;
 
 class TagTest extends TestCase
 {
     /**
-     * @var \Kerox\Messenger\Api\Tag
+     * @var \Involix\Messenger\Api\Tag
      */
     protected $tagApi;
 

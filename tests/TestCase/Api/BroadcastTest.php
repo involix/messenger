@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace Kerox\Messenger\Tests\TestCase\Api;
+namespace Involix\Messenger\Tests\TestCase\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\Handler\MockHandler;
 use GuzzleHttp\HandlerStack;
 use GuzzleHttp\Psr7\Response;
-use Kerox\Messenger\Api\Broadcast;
+use Involix\Messenger\Api\Broadcast;
 use PHPUnit\Framework\TestCase;
 
 class BroadcastTest extends TestCase

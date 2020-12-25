@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Kerox\Messenger\Model\Message\Attachment\Template;
+namespace Involix\Messenger\Model\Message\Attachment\Template;
 
-use Kerox\Messenger\Exception\InvalidTypeException;
-use Kerox\Messenger\Model\Message\Attachment\AbstractTemplate;
-use Kerox\Messenger\Model\Message\Attachment\Template\Airline\FlightInfo;
+use Involix\Messenger\Exception\InvalidTypeException;
+use Involix\Messenger\Model\Message\Attachment\AbstractTemplate;
+use Involix\Messenger\Model\Message\Attachment\Template\Airline\FlightInfo;
 
 class AirlineUpdateTemplate extends AbstractAirlineTemplate
 {
@@ -30,14 +30,14 @@ class AirlineUpdateTemplate extends AbstractAirlineTemplate
     protected $pnrNumber;
 
     /**
-     * @var \Kerox\Messenger\Model\Message\Attachment\Template\Airline\FlightInfo
+     * @var \Involix\Messenger\Model\Message\Attachment\Template\Airline\FlightInfo
      */
     protected $updateFlightInfo;
 
     /**
      * AirlineUpdate constructor.
      *
-     * @throws \Kerox\Messenger\Exception\MessengerException
+     * @throws \Involix\Messenger\Exception\MessengerException
      */
     public function __construct(string $updateType, string $locale, string $pnrNumber, FlightInfo $updateFlightInfo)
     {
@@ -51,9 +51,9 @@ class AirlineUpdateTemplate extends AbstractAirlineTemplate
     }
 
     /**
-     *@throws \Kerox\Messenger\Exception\MessengerException
+     *@throws \Involix\Messenger\Exception\MessengerException
      *
-     *@return \Kerox\Messenger\Model\Message\Attachment\Template\AirlineUpdateTemplate
+     *@return \Involix\Messenger\Model\Message\Attachment\Template\AirlineUpdateTemplate
      */
     public static function create(
         string $updateType,
@@ -65,7 +65,7 @@ class AirlineUpdateTemplate extends AbstractAirlineTemplate
     }
 
     /**
-     * @return \Kerox\Messenger\Model\Message\Attachment\Template\AirlineUpdateTemplate
+     * @return \Involix\Messenger\Model\Message\Attachment\Template\AirlineUpdateTemplate
      */
     public function setIntroMessage(string $introMessage): self
     {
@@ -75,7 +75,7 @@ class AirlineUpdateTemplate extends AbstractAirlineTemplate
     }
 
     /**
-     * @throws \Kerox\Messenger\Exception\MessengerException
+     * @throws \Involix\Messenger\Exception\MessengerException
      */
     private function isValidUpdateType(string $updateType): void
     {

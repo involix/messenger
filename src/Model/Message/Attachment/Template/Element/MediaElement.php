@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Kerox\Messenger\Model\Message\Attachment\Template\Element;
+namespace Involix\Messenger\Model\Message\Attachment\Template\Element;
 
-use Kerox\Messenger\Exception\InvalidTypeException;
-use Kerox\Messenger\Helper\ValidatorTrait;
-use Kerox\Messenger\Model\Common\Button\AbstractButton;
+use Involix\Messenger\Exception\InvalidTypeException;
+use Involix\Messenger\Helper\ValidatorTrait;
+use Involix\Messenger\Model\Common\Button\AbstractButton;
 
 class MediaElement implements \JsonSerializable
 {
@@ -31,14 +31,14 @@ class MediaElement implements \JsonSerializable
     protected $url;
 
     /**
-     * @var \Kerox\Messenger\Model\Common\Button\AbstractButton[]|null
+     * @var \Involix\Messenger\Model\Common\Button\AbstractButton[]|null
      */
     protected $buttons;
 
     /**
      * MediaElement constructor.
      *
-     * @throws \Kerox\Messenger\Exception\MessengerException
+     * @throws \Involix\Messenger\Exception\MessengerException
      */
     public function __construct(string $url, string $mediaType = self::TYPE_IMAGE)
     {
@@ -54,9 +54,9 @@ class MediaElement implements \JsonSerializable
     }
 
     /**
-     * @throws \Kerox\Messenger\Exception\MessengerException
+     * @throws \Involix\Messenger\Exception\MessengerException
      *
-     * @return \Kerox\Messenger\Model\Message\Attachment\Template\Element\MediaElement
+     * @return \Involix\Messenger\Model\Message\Attachment\Template\Element\MediaElement
      */
     public static function create(string $url, string $mediaType = self::TYPE_IMAGE): self
     {
@@ -64,11 +64,11 @@ class MediaElement implements \JsonSerializable
     }
 
     /**
-     * @param \Kerox\Messenger\Model\Common\Button\AbstractButton[] $buttons
+     * @param \Involix\Messenger\Model\Common\Button\AbstractButton[] $buttons
      *
-     * @throws \Kerox\Messenger\Exception\MessengerException
+     * @throws \Involix\Messenger\Exception\MessengerException
      *
-     * @return \Kerox\Messenger\Model\Message\Attachment\Template\Element\MediaElement
+     * @return \Involix\Messenger\Model\Message\Attachment\Template\Element\MediaElement
      */
     public function setButtons(array $buttons): self
     {
@@ -93,7 +93,7 @@ class MediaElement implements \JsonSerializable
     }
 
     /**
-     * @throws \Kerox\Messenger\Exception\MessengerException
+     * @throws \Involix\Messenger\Exception\MessengerException
      */
     private function isValidMediaType(string $mediaType): void
     {

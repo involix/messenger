@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Kerox\Messenger\Model\ProfileSettings;
+namespace Involix\Messenger\Model\ProfileSettings;
 
 class IceBreakers implements \JsonSerializable
 {
@@ -26,7 +26,7 @@ class IceBreakers implements \JsonSerializable
     }
 
     /**
-     * @return \Kerox\Messenger\Model\ProfileSettings\IceBreakers
+     * @return \Involix\Messenger\Model\ProfileSettings\IceBreakers
      */
     public static function create(string $question, string $payload): self
     {

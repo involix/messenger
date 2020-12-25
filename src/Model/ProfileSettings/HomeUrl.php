@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Kerox\Messenger\Model\ProfileSettings;
+namespace Involix\Messenger\Model\ProfileSettings;
 
-use Kerox\Messenger\Helper\ValidatorTrait;
-use Kerox\Messenger\Model\Common\Button\WebUrl;
+use Involix\Messenger\Helper\ValidatorTrait;
+use Involix\Messenger\Model\Common\Button\WebUrl;
 
 class HomeUrl implements \JsonSerializable
 {
@@ -34,7 +34,7 @@ class HomeUrl implements \JsonSerializable
     /**
      * HomeUrl constructor.
      *
-     * @throws \Kerox\Messenger\Exception\InvalidUrlException
+     * @throws \Involix\Messenger\Exception\InvalidUrlException
      */
     public function __construct(
         string $url,
@@ -51,9 +51,9 @@ class HomeUrl implements \JsonSerializable
     }
 
     /**
-     * @throws \Kerox\Messenger\Exception\InvalidUrlException
+     * @throws \Involix\Messenger\Exception\InvalidUrlException
      *
-     * @return \Kerox\Messenger\Model\ProfileSettings\HomeUrl
+     * @return \Involix\Messenger\Model\ProfileSettings\HomeUrl
      */
     public static function create(
         string $url,

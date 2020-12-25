@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Kerox\Messenger\Model\Message\Attachment\Template\Airline;
+namespace Involix\Messenger\Model\Message\Attachment\Template\Airline;
 
-use Kerox\Messenger\Exception\InvalidKeyException;
+use Involix\Messenger\Exception\InvalidKeyException;
 
 class ExtendedFlightInfo extends AbstractFlightInfo implements TravelClassInterface
 {
@@ -31,11 +31,11 @@ class ExtendedFlightInfo extends AbstractFlightInfo implements TravelClassInterf
     /**
      * ExtendedFlightInfo constructor.
      *
-     * @param \Kerox\Messenger\Model\Message\Attachment\Template\Airline\Airport        $departureAirport
-     * @param \Kerox\Messenger\Model\Message\Attachment\Template\Airline\Airport        $arrivalAirport
-     * @param \Kerox\Messenger\Model\Message\Attachment\Template\Airline\FlightSchedule $flightSchedule
+     * @param \Involix\Messenger\Model\Message\Attachment\Template\Airline\Airport        $departureAirport
+     * @param \Involix\Messenger\Model\Message\Attachment\Template\Airline\Airport        $arrivalAirport
+     * @param \Involix\Messenger\Model\Message\Attachment\Template\Airline\FlightSchedule $flightSchedule
      *
-     * @throws \Kerox\Messenger\Exception\MessengerException
+     * @throws \Involix\Messenger\Exception\MessengerException
      */
     public function __construct(
         string $connectionId,
@@ -56,13 +56,13 @@ class ExtendedFlightInfo extends AbstractFlightInfo implements TravelClassInterf
     }
 
     /**
-     * @param \Kerox\Messenger\Model\Message\Attachment\Template\Airline\Airport        $departureAirport
-     * @param \Kerox\Messenger\Model\Message\Attachment\Template\Airline\Airport        $arrivalAirport
-     * @param \Kerox\Messenger\Model\Message\Attachment\Template\Airline\FlightSchedule $flightSchedule
+     * @param \Involix\Messenger\Model\Message\Attachment\Template\Airline\Airport        $departureAirport
+     * @param \Involix\Messenger\Model\Message\Attachment\Template\Airline\Airport        $arrivalAirport
+     * @param \Involix\Messenger\Model\Message\Attachment\Template\Airline\FlightSchedule $flightSchedule
      *
-     * @throws \Kerox\Messenger\Exception\MessengerException
+     * @throws \Involix\Messenger\Exception\MessengerException
      *
-     * @return \Kerox\Messenger\Model\Message\Attachment\Template\Airline\ExtendedFlightInfo
+     * @return \Involix\Messenger\Model\Message\Attachment\Template\Airline\ExtendedFlightInfo
      */
     public static function create(
         string $connectionId,
@@ -95,7 +95,7 @@ class ExtendedFlightInfo extends AbstractFlightInfo implements TravelClassInterf
     }
 
     /**
-     * @throws \Kerox\Messenger\Exception\MessengerException
+     * @throws \Involix\Messenger\Exception\MessengerException
      */
     public function isValidTravelClass(string $travelClass): void
     {

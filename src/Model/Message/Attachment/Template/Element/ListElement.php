@@ -2,26 +2,26 @@
 
 declare(strict_types=1);
 
-namespace Kerox\Messenger\Model\Message\Attachment\Template\Element;
+namespace Involix\Messenger\Model\Message\Attachment\Template\Element;
 
-use Kerox\Messenger\Model\Common\Button\WebUrl;
+use Involix\Messenger\Model\Common\Button\WebUrl;
 
 class ListElement extends AbstractElement
 {
     /**
-     * @var \Kerox\Messenger\Model\Common\Button\WebUrl
+     * @var \Involix\Messenger\Model\Common\Button\WebUrl
      */
     protected $defaultAction;
 
     /**
-     * @var \Kerox\Messenger\Model\Common\Button\AbstractButton[]
+     * @var \Involix\Messenger\Model\Common\Button\AbstractButton[]
      */
     protected $buttons = [];
 
     /**
-     * @throws \Kerox\Messenger\Exception\MessengerException
+     * @throws \Involix\Messenger\Exception\MessengerException
      *
-     * @return \Kerox\Messenger\Model\Message\Attachment\Template\Element\ListElement
+     * @return \Involix\Messenger\Model\Message\Attachment\Template\Element\ListElement
      */
     public static function create(string $title): self
     {
@@ -29,9 +29,9 @@ class ListElement extends AbstractElement
     }
 
     /**
-     * @throws \Kerox\Messenger\Exception\MessengerException
+     * @throws \Involix\Messenger\Exception\MessengerException
      *
-     * @return \Kerox\Messenger\Model\Message\Attachment\Template\Element\ListElement
+     * @return \Involix\Messenger\Model\Message\Attachment\Template\Element\ListElement
      */
     public function setSubtitle(string $subtitle): self
     {
@@ -41,9 +41,9 @@ class ListElement extends AbstractElement
     }
 
     /**
-     * @throws \Kerox\Messenger\Exception\MessengerException
+     * @throws \Involix\Messenger\Exception\MessengerException
      *
-     * @return \Kerox\Messenger\Model\Message\Attachment\Template\Element\ListElement
+     * @return \Involix\Messenger\Model\Message\Attachment\Template\Element\ListElement
      */
     public function setImageUrl(string $imageUrl): self
     {
@@ -53,7 +53,7 @@ class ListElement extends AbstractElement
     }
 
     /**
-     * @return \Kerox\Messenger\Model\Message\Attachment\Template\Element\ListElement
+     * @return \Involix\Messenger\Model\Message\Attachment\Template\Element\ListElement
      */
     public function setDefaultAction(WebUrl $defaultAction): self
     {
@@ -63,11 +63,11 @@ class ListElement extends AbstractElement
     }
 
     /**
-     * @param \Kerox\Messenger\Model\Common\Button\AbstractButton[] $buttons
+     * @param \Involix\Messenger\Model\Common\Button\AbstractButton[] $buttons
      *
-     * @throws \Kerox\Messenger\Exception\MessengerException
+     * @throws \Involix\Messenger\Exception\MessengerException
      *
-     * @return \Kerox\Messenger\Model\Message\Attachment\Template\Element\ListElement
+     * @return \Involix\Messenger\Model\Message\Attachment\Template\Element\ListElement
      */
     public function setButtons(array $buttons): self
     {

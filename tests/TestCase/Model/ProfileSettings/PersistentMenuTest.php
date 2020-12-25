@@ -2,14 +2,14 @@
 
 declare(strict_types=1);
 
-namespace Kerox\Messenger\Tests\TestCase\Model\ProfileSettings;
+namespace Involix\Messenger\Tests\TestCase\Model\ProfileSettings;
 
-use Kerox\Messenger\Exception\MessengerException;
-use Kerox\Messenger\Model\Common\Button\Nested;
-use Kerox\Messenger\Model\Common\Button\PhoneNumber;
-use Kerox\Messenger\Model\Common\Button\Postback;
-use Kerox\Messenger\Model\Common\Button\WebUrl;
-use Kerox\Messenger\Model\ProfileSettings\PersistentMenu;
+use Involix\Messenger\Exception\MessengerException;
+use Involix\Messenger\Model\Common\Button\Nested;
+use Involix\Messenger\Model\Common\Button\PhoneNumber;
+use Involix\Messenger\Model\Common\Button\Postback;
+use Involix\Messenger\Model\Common\Button\WebUrl;
+use Involix\Messenger\Model\ProfileSettings\PersistentMenu;
 use PHPUnit\Framework\TestCase;
 
 class PersistentMenuTest extends TestCase
@@ -17,7 +17,7 @@ class PersistentMenuTest extends TestCase
     public function testInvalidButton(): void
     {
         $this->expectException(MessengerException::class);
-        $this->expectExceptionMessage('Array can only contain instance of "Kerox\Messenger\Model\Common\Button\AbstractButton".');
+        $this->expectExceptionMessage('Array can only contain instance of "Involix\Messenger\Model\Common\Button\AbstractButton".');
 
         PersistentMenu::create()->setComposerInputDisabled(true)->addButtons([
             'Phone Number' => [

@@ -2,21 +2,21 @@
 
 declare(strict_types=1);
 
-namespace Kerox\Messenger\Tests\TestCase\Api;
+namespace Involix\Messenger\Tests\TestCase\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\Handler\MockHandler;
 use GuzzleHttp\HandlerStack;
 use GuzzleHttp\Psr7\Response;
-use Kerox\Messenger\Api\Insights;
-use Kerox\Messenger\Exception\MessengerException;
-use Kerox\Messenger\Model\Data;
+use Involix\Messenger\Api\Insights;
+use Involix\Messenger\Exception\MessengerException;
+use Involix\Messenger\Model\Data;
 use PHPUnit\Framework\TestCase;
 
 class InsightsTest extends TestCase
 {
     /**
-     * @var \Kerox\Messenger\Api\Insights
+     * @var \Involix\Messenger\Api\Insights
      */
     protected $insightsApi;
 

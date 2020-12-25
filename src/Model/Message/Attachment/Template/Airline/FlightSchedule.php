@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Kerox\Messenger\Model\Message\Attachment\Template\Airline;
+namespace Involix\Messenger\Model\Message\Attachment\Template\Airline;
 
-use Kerox\Messenger\Helper\ValidatorTrait;
+use Involix\Messenger\Helper\ValidatorTrait;
 
 class FlightSchedule implements \JsonSerializable
 {
@@ -28,7 +28,7 @@ class FlightSchedule implements \JsonSerializable
     /**
      * FlightSchedule constructor.
      *
-     * @throws \Kerox\Messenger\Exception\MessengerException
+     * @throws \Involix\Messenger\Exception\MessengerException
      */
     public function __construct(string $departureTime)
     {
@@ -38,9 +38,9 @@ class FlightSchedule implements \JsonSerializable
     }
 
     /**
-     * @throws \Kerox\Messenger\Exception\MessengerException
+     * @throws \Involix\Messenger\Exception\MessengerException
      *
-     * @return \Kerox\Messenger\Model\Message\Attachment\Template\Airline\FlightSchedule
+     * @return \Involix\Messenger\Model\Message\Attachment\Template\Airline\FlightSchedule
      */
     public static function create(string $departureTime): self
     {
@@ -48,7 +48,7 @@ class FlightSchedule implements \JsonSerializable
     }
 
     /**
-     * @throws \Kerox\Messenger\Exception\MessengerException
+     * @throws \Involix\Messenger\Exception\MessengerException
      *
      * @return FlightSchedule
      */
@@ -62,7 +62,7 @@ class FlightSchedule implements \JsonSerializable
     }
 
     /**
-     * @throws \Kerox\Messenger\Exception\MessengerException
+     * @throws \Involix\Messenger\Exception\MessengerException
      *
      * @return FlightSchedule
      */

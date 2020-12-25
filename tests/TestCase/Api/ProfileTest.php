@@ -2,22 +2,22 @@
 
 declare(strict_types=1);
 
-namespace Kerox\Messenger\Tests\TestCase\Api;
+namespace Involix\Messenger\Tests\TestCase\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\Handler\MockHandler;
 use GuzzleHttp\HandlerStack;
 use GuzzleHttp\Psr7\Response;
-use Kerox\Messenger\Api\Profile;
-use Kerox\Messenger\Exception\MessengerException;
-use Kerox\Messenger\Model\ProfileSettings;
-use Kerox\Messenger\Model\ProfileSettings\Greeting;
+use Involix\Messenger\Api\Profile;
+use Involix\Messenger\Exception\MessengerException;
+use Involix\Messenger\Model\ProfileSettings;
+use Involix\Messenger\Model\ProfileSettings\Greeting;
 use PHPUnit\Framework\TestCase;
 
 class ProfileTest extends TestCase
 {
     /**
-     * @var \Kerox\Messenger\Api\Profile
+     * @var \Involix\Messenger\Api\Profile
      */
     protected $profileApi;
 

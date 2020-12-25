@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace Kerox\Messenger\Tests\TestCase\Model\Message\Attachment;
+namespace Involix\Messenger\Tests\TestCase\Model\Message\Attachment;
 
-use Kerox\Messenger\Model\Message\Attachment\Audio;
-use Kerox\Messenger\Model\Message\Attachment\File;
-use Kerox\Messenger\Model\Message\Attachment\Image;
-use Kerox\Messenger\Model\Message\Attachment\Video;
+use Involix\Messenger\Model\Message\Attachment\Audio;
+use Involix\Messenger\Model\Message\Attachment\File;
+use Involix\Messenger\Model\Message\Attachment\Image;
+use Involix\Messenger\Model\Message\Attachment\Video;
 use PHPUnit\Framework\TestCase;
 
 class FileTest extends TestCase

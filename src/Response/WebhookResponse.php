@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Kerox\Messenger\Response;
+namespace Involix\Messenger\Response;
 
 class WebhookResponse extends AbstractResponse
 {

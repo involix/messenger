@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Kerox\Messenger\Api;
+namespace Involix\Messenger\Api;
 
-use Kerox\Messenger\Model\PersonaSettings;
-use Kerox\Messenger\Request\PersonaRequest;
-use Kerox\Messenger\Response\PersonaResponse;
+use Involix\Messenger\Model\PersonaSettings;
+use Involix\Messenger\Request\PersonaRequest;
+use Involix\Messenger\Response\PersonaResponse;
 
 class Persona extends AbstractApi
 {

@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Kerox\Messenger\Event;
+namespace Involix\Messenger\Event;
 
-use Kerox\Messenger\Model\Callback\AccountLinking;
+use Involix\Messenger\Model\Callback\AccountLinking;
 
 class AccountLinkingEvent extends AbstractEvent
 {
@@ -16,7 +16,7 @@ class AccountLinkingEvent extends AbstractEvent
     protected $timestamp;
 
     /**
-     * @var \Kerox\Messenger\Model\Callback\AccountLinking
+     * @var \Involix\Messenger\Model\Callback\AccountLinking
      */
     protected $accountLinking;
 
@@ -47,7 +47,7 @@ class AccountLinkingEvent extends AbstractEvent
     }
 
     /**
-     * @return \Kerox\Messenger\Event\AccountLinkingEvent
+     * @return \Involix\Messenger\Event\AccountLinkingEvent
      */
     public static function create(array $payload): self
     {

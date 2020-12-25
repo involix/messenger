@@ -2,16 +2,16 @@
 
 declare(strict_types=1);
 
-namespace Kerox\Messenger\Response;
+namespace Involix\Messenger\Response;
 
-use Kerox\Messenger\Model\Data;
+use Involix\Messenger\Model\Data;
 
 class TagResponse extends AbstractResponse
 {
     private const DATA = 'data';
 
     /**
-     * @var \Kerox\Messenger\Model\Data[]
+     * @var \Involix\Messenger\Model\Data[]
      */
     protected $data = [];
 
@@ -21,7 +21,7 @@ class TagResponse extends AbstractResponse
     }
 
     /**
-     * @return \Kerox\Messenger\Model\Data[]
+     * @return \Involix\Messenger\Model\Data[]
      */
     public function getData(): array
     {

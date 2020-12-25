@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Kerox\Messenger\Request;
+namespace Involix\Messenger\Request;
 
-use Kerox\Messenger\Model\Message;
-use Kerox\Messenger\SendInterface;
+use Involix\Messenger\Model\Message;
+use Involix\Messenger\SendInterface;
 
 /**
  * @deprecated Since version 3.2.0 and will be removed in version 4.0.0.
@@ -16,7 +16,7 @@ class BroadcastRequest extends AbstractRequest
     public const REQUEST_TYPE_ACTION = 'action';
 
     /**
-     * @var string|\Kerox\Messenger\Model\Message|null
+     * @var string|\Involix\Messenger\Model\Message|null
      */
     protected $message;
 

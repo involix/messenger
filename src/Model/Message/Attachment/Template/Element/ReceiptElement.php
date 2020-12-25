@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Kerox\Messenger\Model\Message\Attachment\Template\Element;
+namespace Involix\Messenger\Model\Message\Attachment\Template\Element;
 
 class ReceiptElement extends AbstractElement
 {
@@ -24,7 +24,7 @@ class ReceiptElement extends AbstractElement
     /**
      * Element constructor.
      *
-     * @throws \Kerox\Messenger\Exception\MessengerException
+     * @throws \Involix\Messenger\Exception\MessengerException
      */
     public function __construct(string $title, float $price)
     {
@@ -34,9 +34,9 @@ class ReceiptElement extends AbstractElement
     }
 
     /**
-     * @throws \Kerox\Messenger\Exception\MessengerException
+     * @throws \Involix\Messenger\Exception\MessengerException
      *
-     * @return \Kerox\Messenger\Model\Message\Attachment\Template\Element\ReceiptElement
+     * @return \Involix\Messenger\Model\Message\Attachment\Template\Element\ReceiptElement
      */
     public static function create(string $title, float $price): self
     {
@@ -44,9 +44,9 @@ class ReceiptElement extends AbstractElement
     }
 
     /**
-     * @throws \Kerox\Messenger\Exception\MessengerException
+     * @throws \Involix\Messenger\Exception\MessengerException
      *
-     * @return \Kerox\Messenger\Model\Message\Attachment\Template\Element\ReceiptElement
+     * @return \Involix\Messenger\Model\Message\Attachment\Template\Element\ReceiptElement
      */
     public function setSubtitle(string $subtitle): self
     {
@@ -56,9 +56,9 @@ class ReceiptElement extends AbstractElement
     }
 
     /**
-     * @throws \Kerox\Messenger\Exception\MessengerException
+     * @throws \Involix\Messenger\Exception\MessengerException
      *
-     * @return \Kerox\Messenger\Model\Message\Attachment\Template\Element\ReceiptElement
+     * @return \Involix\Messenger\Model\Message\Attachment\Template\Element\ReceiptElement
      */
     public function setImageUrl(string $imageUrl): self
     {
@@ -78,7 +78,7 @@ class ReceiptElement extends AbstractElement
     }
 
     /**
-     * @throws \Kerox\Messenger\Exception\MessengerException
+     * @throws \Involix\Messenger\Exception\MessengerException
      *
      * @return ReceiptElement
      */

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Kerox\Messenger\Model\Callback;
+namespace Involix\Messenger\Model\Callback;
 
 class Delivery
 {
@@ -36,7 +36,7 @@ class Delivery
     }
 
     /**
-     * @return \Kerox\Messenger\Model\Callback\Delivery
+     * @return \Involix\Messenger\Model\Callback\Delivery
      */
     public static function create(array $callbackData): self
     {

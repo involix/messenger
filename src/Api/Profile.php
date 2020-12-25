@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace Kerox\Messenger\Api;
+namespace Involix\Messenger\Api;
 
-use Kerox\Messenger\Exception\InvalidKeyException;
-use Kerox\Messenger\Model\ProfileSettings;
-use Kerox\Messenger\ProfileInterface;
-use Kerox\Messenger\Request\ProfileRequest;
-use Kerox\Messenger\Response\ProfileResponse;
+use Involix\Messenger\Exception\InvalidKeyException;
+use Involix\Messenger\Model\ProfileSettings;
+use Involix\Messenger\ProfileInterface;
+use Involix\Messenger\Request\ProfileRequest;
+use Involix\Messenger\Response\ProfileResponse;
 
 class Profile extends AbstractApi implements ProfileInterface
 {
@@ -21,7 +21,7 @@ class Profile extends AbstractApi implements ProfileInterface
     }
 
     /**
-     * @throws \Kerox\Messenger\Exception\MessengerException
+     * @throws \Involix\Messenger\Exception\MessengerException
      */
     public function get(array $profileSettings): ProfileResponse
     {
@@ -36,7 +36,7 @@ class Profile extends AbstractApi implements ProfileInterface
     }
 
     /**
-     * @throws \Kerox\Messenger\Exception\MessengerException
+     * @throws \Involix\Messenger\Exception\MessengerException
      */
     public function delete(array $profileSettings): ProfileResponse
     {
@@ -49,7 +49,7 @@ class Profile extends AbstractApi implements ProfileInterface
     }
 
     /**
-     * @throws \Kerox\Messenger\Exception\MessengerException
+     * @throws \Involix\Messenger\Exception\MessengerException
      */
     private function isValidFields(array $fields): void
     {

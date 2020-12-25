@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Kerox\Messenger\Model\Callback;
+namespace Involix\Messenger\Model\Callback;
 
-use Kerox\Messenger\Model\Callback\Payment\RequestedUserInfo;
-use Kerox\Messenger\Model\Common\Address;
+use Involix\Messenger\Model\Callback\Payment\RequestedUserInfo;
+use Involix\Messenger\Model\Common\Address;
 
 class PreCheckout
 {
@@ -15,7 +15,7 @@ class PreCheckout
     protected $payload;
 
     /**
-     * @var \Kerox\Messenger\Model\Callback\Payment\RequestedUserInfo
+     * @var \Involix\Messenger\Model\Callback\Payment\RequestedUserInfo
      */
     protected $requestedUserInfo;
 
@@ -60,7 +60,7 @@ class PreCheckout
     }
 
     /**
-     * @return \Kerox\Messenger\Model\Callback\PreCheckout
+     * @return \Involix\Messenger\Model\Callback\PreCheckout
      */
     public static function create(array $callbackData): self
     {

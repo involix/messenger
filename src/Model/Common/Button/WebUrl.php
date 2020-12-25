@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Kerox\Messenger\Model\Common\Button;
+namespace Involix\Messenger\Model\Common\Button;
 
-use Kerox\Messenger\Exception\InvalidKeyException;
+use Involix\Messenger\Exception\InvalidKeyException;
 
 class WebUrl extends AbstractButton
 {
@@ -45,7 +45,7 @@ class WebUrl extends AbstractButton
     /**
      * WebUrl constructor.
      *
-     * @throws \Kerox\Messenger\Exception\MessengerException
+     * @throws \Involix\Messenger\Exception\MessengerException
      */
     public function __construct(string $title, string $url)
     {
@@ -59,9 +59,9 @@ class WebUrl extends AbstractButton
     }
 
     /**
-     * @throws \Kerox\Messenger\Exception\MessengerException
+     * @throws \Involix\Messenger\Exception\MessengerException
      *
-     * @return \Kerox\Messenger\Model\Common\Button\WebUrl
+     * @return \Involix\Messenger\Model\Common\Button\WebUrl
      */
     public static function create(string $title, string $url): self
     {
@@ -69,7 +69,7 @@ class WebUrl extends AbstractButton
     }
 
     /**
-     * @throws \Kerox\Messenger\Exception\MessengerException
+     * @throws \Involix\Messenger\Exception\MessengerException
      *
      * @return WebUrl
      */
@@ -93,7 +93,7 @@ class WebUrl extends AbstractButton
     }
 
     /**
-     * @throws \Kerox\Messenger\Exception\MessengerException
+     * @throws \Involix\Messenger\Exception\MessengerException
      *
      * @return WebUrl
      */
@@ -116,7 +116,7 @@ class WebUrl extends AbstractButton
     }
 
     /**
-     * @throws \Kerox\Messenger\Exception\MessengerException
+     * @throws \Involix\Messenger\Exception\MessengerException
      */
     private function isValidWebviewHeightRatio(string $webviewHeightRatio): void
     {

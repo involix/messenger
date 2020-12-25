@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Kerox\Messenger\Event;
+namespace Involix\Messenger\Event;
 
-use Kerox\Messenger\Model\Callback\Postback;
+use Involix\Messenger\Model\Callback\Postback;
 
 class PostbackEvent extends AbstractEvent
 {
@@ -16,7 +16,7 @@ class PostbackEvent extends AbstractEvent
     protected $timestamp;
 
     /**
-     * @var \Kerox\Messenger\Model\Callback\Postback
+     * @var \Involix\Messenger\Model\Callback\Postback
      */
     protected $postback;
 
@@ -47,7 +47,7 @@ class PostbackEvent extends AbstractEvent
     }
 
     /**
-     * @return \Kerox\Messenger\Event\PostbackEvent
+     * @return \Involix\Messenger\Event\PostbackEvent
      */
     public static function create(array $payload): self
     {

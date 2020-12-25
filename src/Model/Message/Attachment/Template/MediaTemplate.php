@@ -2,23 +2,23 @@
 
 declare(strict_types=1);
 
-namespace Kerox\Messenger\Model\Message\Attachment\Template;
+namespace Involix\Messenger\Model\Message\Attachment\Template;
 
-use Kerox\Messenger\Exception\InvalidClassException;
-use Kerox\Messenger\Model\Message\Attachment\AbstractTemplate;
-use Kerox\Messenger\Model\Message\Attachment\Template\Element\MediaElement;
+use Involix\Messenger\Exception\InvalidClassException;
+use Involix\Messenger\Model\Message\Attachment\AbstractTemplate;
+use Involix\Messenger\Model\Message\Attachment\Template\Element\MediaElement;
 
 class MediaTemplate extends AbstractTemplate
 {
     /**
-     * @var \Kerox\Messenger\Model\Message\Attachment\Template\Element\MediaElement[]
+     * @var \Involix\Messenger\Model\Message\Attachment\Template\Element\MediaElement[]
      */
     protected $elements;
 
     /**
      * MediaTemplate constructor.
      *
-     * @throws \Kerox\Messenger\Exception\MessengerException
+     * @throws \Involix\Messenger\Exception\MessengerException
      */
     public function __construct(array $elements)
     {
@@ -30,9 +30,9 @@ class MediaTemplate extends AbstractTemplate
     }
 
     /**
-     *@throws \Kerox\Messenger\Exception\MessengerException
+     *@throws \Involix\Messenger\Exception\MessengerException
      *
-     * @return \Kerox\Messenger\Model\Message\Attachment\Template\MediaTemplate
+     * @return \Involix\Messenger\Model\Message\Attachment\Template\MediaTemplate
      */
     public static function create(array $elements): self
     {
@@ -40,7 +40,7 @@ class MediaTemplate extends AbstractTemplate
     }
 
     /**
-     * @throws \Kerox\Messenger\Exception\MessengerException
+     * @throws \Involix\Messenger\Exception\MessengerException
      */
     private function isValidElements(array $elements): void
     {

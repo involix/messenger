@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Kerox\Messenger\Event;
+namespace Involix\Messenger\Event;
 
-use Kerox\Messenger\Model\Callback\PassThreadControl;
+use Involix\Messenger\Model\Callback\PassThreadControl;
 
 class PassThreadControlEvent extends AbstractEvent
 {
@@ -16,7 +16,7 @@ class PassThreadControlEvent extends AbstractEvent
     protected $timestamp;
 
     /**
-     * @var \Kerox\Messenger\Model\Callback\PassThreadControl
+     * @var \Involix\Messenger\Model\Callback\PassThreadControl
      */
     protected $passThreadControl;
 
@@ -51,7 +51,7 @@ class PassThreadControlEvent extends AbstractEvent
     }
 
     /**
-     * @return \Kerox\Messenger\Event\PassThreadControlEvent
+     * @return \Involix\Messenger\Event\PassThreadControlEvent
      */
     public static function create(array $payload): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Kerox\Messenger\Response;
+namespace Involix\Messenger\Response;
 
 /**
  * @deprecated Since version 3.2.0 and will be removed in version 4.0.0.

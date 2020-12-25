@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Kerox\Messenger\Model\Callback;
+namespace Involix\Messenger\Model\Callback;
 
 class Reaction
 {
@@ -70,7 +70,7 @@ class Reaction
     }
 
     /**
-     * @return \Kerox\Messenger\Model\Callback\Reaction
+     * @return \Involix\Messenger\Model\Callback\Reaction
      */
     public static function create(array $callbackData): self
     {

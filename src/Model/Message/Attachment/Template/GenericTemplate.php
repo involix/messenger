@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Kerox\Messenger\Model\Message\Attachment\Template;
+namespace Involix\Messenger\Model\Message\Attachment\Template;
 
-use Kerox\Messenger\Model\Message\Attachment\AbstractTemplate;
+use Involix\Messenger\Model\Message\Attachment\AbstractTemplate;
 
 class GenericTemplate extends AbstractTemplate
 {
@@ -12,7 +12,7 @@ class GenericTemplate extends AbstractTemplate
     public const IMAGE_RATIO_SQUARE = 'square';
 
     /**
-     * @var \Kerox\Messenger\Model\Message\Attachment\Template\Element\GenericElement[]
+     * @var \Involix\Messenger\Model\Message\Attachment\Template\Element\GenericElement[]
      */
     protected $elements;
 
@@ -24,9 +24,9 @@ class GenericTemplate extends AbstractTemplate
     /**
      * Generic constructor.
      *
-     * @param \Kerox\Messenger\Model\Message\Attachment\Template\Element\GenericElement[] $elements
+     * @param \Involix\Messenger\Model\Message\Attachment\Template\Element\GenericElement[] $elements
      *
-     * @throws \Kerox\Messenger\Exception\MessengerException
+     * @throws \Involix\Messenger\Exception\MessengerException
      */
     public function __construct(array $elements, string $imageRatio = self::IMAGE_RATIO_HORIZONTAL)
     {
@@ -39,9 +39,9 @@ class GenericTemplate extends AbstractTemplate
     }
 
     /**
-     *@throws \Kerox\Messenger\Exception\MessengerException
+     *@throws \Involix\Messenger\Exception\MessengerException
      *
-     * @return \Kerox\Messenger\Model\Message\Attachment\Template\GenericTemplate
+     * @return \Involix\Messenger\Model\Message\Attachment\Template\GenericTemplate
      */
     public static function create(array $elements, string $imageRatio = self::IMAGE_RATIO_HORIZONTAL): self
     {

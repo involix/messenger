@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Kerox\Messenger\Model\ProfileSettings;
+namespace Involix\Messenger\Model\ProfileSettings;
 
-use Kerox\Messenger\Exception\InvalidTypeException;
-use Kerox\Messenger\Helper\UtilityTrait;
-use Kerox\Messenger\Helper\ValidatorTrait;
+use Involix\Messenger\Exception\InvalidTypeException;
+use Involix\Messenger\Helper\UtilityTrait;
+use Involix\Messenger\Helper\ValidatorTrait;
 
 /**
  * @deprecated Since version 3.3.0 and will be removed in version 4.0.0.
@@ -38,7 +38,7 @@ class TargetAudience implements \JsonSerializable
     /**
      * TargetAudience constructor.
      *
-     * @throws \Kerox\Messenger\Exception\MessengerException
+     * @throws \Involix\Messenger\Exception\MessengerException
      */
     public function __construct(
         string $audienceType = self::AUDIENCE_TYPE_ALL,
@@ -55,9 +55,9 @@ class TargetAudience implements \JsonSerializable
     }
 
     /**
-     * @throws \Kerox\Messenger\Exception\MessengerException
+     * @throws \Involix\Messenger\Exception\MessengerException
      *
-     * @return \Kerox\Messenger\Model\ProfileSettings\TargetAudience
+     * @return \Involix\Messenger\Model\ProfileSettings\TargetAudience
      */
     public static function create(
         string $audienceType = self::AUDIENCE_TYPE_ALL,
@@ -68,9 +68,9 @@ class TargetAudience implements \JsonSerializable
     }
 
     /**
-     * @throws \Kerox\Messenger\Exception\MessengerException
+     * @throws \Involix\Messenger\Exception\MessengerException
      *
-     * @return \Kerox\Messenger\Model\ProfileSettings\TargetAudience
+     * @return \Involix\Messenger\Model\ProfileSettings\TargetAudience
      */
     public function addWhitelistCountry(string $country): self
     {
@@ -82,9 +82,9 @@ class TargetAudience implements \JsonSerializable
     }
 
     /**
-     * @throws \Kerox\Messenger\Exception\MessengerException
+     * @throws \Involix\Messenger\Exception\MessengerException
      *
-     * @return \Kerox\Messenger\Model\ProfileSettings\TargetAudience
+     * @return \Involix\Messenger\Model\ProfileSettings\TargetAudience
      */
     public function addBlacklistCountry(string $country): self
     {
@@ -96,7 +96,7 @@ class TargetAudience implements \JsonSerializable
     }
 
     /**
-     * @throws \Kerox\Messenger\Exception\MessengerException
+     * @throws \Involix\Messenger\Exception\MessengerException
      */
     private function isValidCountries(array $countries): void
     {
@@ -108,7 +108,7 @@ class TargetAudience implements \JsonSerializable
     }
 
     /**
-     * @throws \Kerox\Messenger\Exception\MessengerException
+     * @throws \Involix\Messenger\Exception\MessengerException
      */
     private function isValidAudienceType(string $audienceType): void
     {

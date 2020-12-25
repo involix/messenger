@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Kerox\Messenger\Model\Message\Attachment\Template\Airline;
+namespace Involix\Messenger\Model\Message\Attachment\Template\Airline;
 
-use Kerox\Messenger\Exception\InvalidKeyException;
-use Kerox\Messenger\Helper\ValidatorTrait;
+use Involix\Messenger\Exception\InvalidKeyException;
+use Involix\Messenger\Helper\ValidatorTrait;
 
 class BoardingPass implements \JsonSerializable, TravelClassInterface
 {
@@ -79,7 +79,7 @@ class BoardingPass implements \JsonSerializable, TravelClassInterface
     /**
      * BoardingPass constructor.
      *
-     * @param \Kerox\Messenger\Model\Message\Attachment\Template\Airline\FlightInfo $flightInfo
+     * @param \Involix\Messenger\Model\Message\Attachment\Template\Airline\FlightInfo $flightInfo
      */
     public function __construct(
         string $passengerName,
@@ -99,9 +99,9 @@ class BoardingPass implements \JsonSerializable, TravelClassInterface
     }
 
     /**
-     * @param \Kerox\Messenger\Model\Message\Attachment\Template\Airline\FlightInfo $flightInfo
+     * @param \Involix\Messenger\Model\Message\Attachment\Template\Airline\FlightInfo $flightInfo
      *
-     * @return \Kerox\Messenger\Model\Message\Attachment\Template\Airline\BoardingPass
+     * @return \Involix\Messenger\Model\Message\Attachment\Template\Airline\BoardingPass
      */
     public static function create(
         string $passengerName,
@@ -115,9 +115,9 @@ class BoardingPass implements \JsonSerializable, TravelClassInterface
     }
 
     /**
-     * @throws \Kerox\Messenger\Exception\MessengerException
+     * @throws \Involix\Messenger\Exception\MessengerException
      *
-     * @return \Kerox\Messenger\Model\Message\Attachment\Template\Airline\BoardingPass
+     * @return \Involix\Messenger\Model\Message\Attachment\Template\Airline\BoardingPass
      */
     public function setTravelClass(string $travelClass): self
     {
@@ -129,7 +129,7 @@ class BoardingPass implements \JsonSerializable, TravelClassInterface
     }
 
     /**
-     * @return \Kerox\Messenger\Model\Message\Attachment\Template\Airline\BoardingPass
+     * @return \Involix\Messenger\Model\Message\Attachment\Template\Airline\BoardingPass
      */
     public function setSeat(string $seat): self
     {
@@ -139,9 +139,9 @@ class BoardingPass implements \JsonSerializable, TravelClassInterface
     }
 
     /**
-     * @throws \Kerox\Messenger\Exception\MessengerException
+     * @throws \Involix\Messenger\Exception\MessengerException
      *
-     * @return \Kerox\Messenger\Model\Message\Attachment\Template\Airline\BoardingPass
+     * @return \Involix\Messenger\Model\Message\Attachment\Template\Airline\BoardingPass
      */
     public function addAuxiliaryFields(string $label, string $value): self
     {
@@ -153,9 +153,9 @@ class BoardingPass implements \JsonSerializable, TravelClassInterface
     }
 
     /**
-     * @throws \Kerox\Messenger\Exception\MessengerException
+     * @throws \Involix\Messenger\Exception\MessengerException
      *
-     * @return \Kerox\Messenger\Model\Message\Attachment\Template\Airline\BoardingPass
+     * @return \Involix\Messenger\Model\Message\Attachment\Template\Airline\BoardingPass
      */
     public function addSecondaryFields(string $label, string $value): self
     {
@@ -167,9 +167,9 @@ class BoardingPass implements \JsonSerializable, TravelClassInterface
     }
 
     /**
-     * @throws \Kerox\Messenger\Exception\MessengerException
+     * @throws \Involix\Messenger\Exception\MessengerException
      *
-     * @return \Kerox\Messenger\Model\Message\Attachment\Template\Airline\BoardingPass
+     * @return \Involix\Messenger\Model\Message\Attachment\Template\Airline\BoardingPass
      */
     public function setHeaderImageUrl(string $headerImageUrl): self
     {
@@ -181,7 +181,7 @@ class BoardingPass implements \JsonSerializable, TravelClassInterface
     }
 
     /**
-     * @return \Kerox\Messenger\Model\Message\Attachment\Template\Airline\BoardingPass
+     * @return \Involix\Messenger\Model\Message\Attachment\Template\Airline\BoardingPass
      */
     public function setHeaderTextField(string $headerTextField): self
     {
@@ -209,7 +209,7 @@ class BoardingPass implements \JsonSerializable, TravelClassInterface
     }
 
     /**
-     * @throws \Kerox\Messenger\Exception\MessengerException
+     * @throws \Involix\Messenger\Exception\MessengerException
      */
     public function isValidTravelClass(string $travelClass): void
     {

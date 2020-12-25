@@ -2,21 +2,21 @@
 
 declare(strict_types=1);
 
-namespace Kerox\Messenger;
+namespace Involix\Messenger;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
-use Kerox\Messenger\Api\Broadcast;
-use Kerox\Messenger\Api\Code;
-use Kerox\Messenger\Api\Insights;
-use Kerox\Messenger\Api\Nlp;
-use Kerox\Messenger\Api\Persona;
-use Kerox\Messenger\Api\Profile;
-use Kerox\Messenger\Api\Send;
-use Kerox\Messenger\Api\Tag;
-use Kerox\Messenger\Api\Thread;
-use Kerox\Messenger\Api\User;
-use Kerox\Messenger\Api\Webhook;
+use Involix\Messenger\Api\Broadcast;
+use Involix\Messenger\Api\Code;
+use Involix\Messenger\Api\Insights;
+use Involix\Messenger\Api\Nlp;
+use Involix\Messenger\Api\Persona;
+use Involix\Messenger\Api\Profile;
+use Involix\Messenger\Api\Send;
+use Involix\Messenger\Api\Tag;
+use Involix\Messenger\Api\Thread;
+use Involix\Messenger\Api\User;
+use Involix\Messenger\Api\Webhook;
 use Psr\Http\Message\ServerRequestInterface;
 
 class Messenger

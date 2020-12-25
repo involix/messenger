@@ -2,16 +2,16 @@
 
 declare(strict_types=1);
 
-namespace Kerox\Messenger\Api;
+namespace Involix\Messenger\Api;
 
-use Kerox\Messenger\Exception\InvalidOptionException;
-use Kerox\Messenger\Exception\InvalidRecipientException;
-use Kerox\Messenger\Exception\InvalidTypeException;
-use Kerox\Messenger\Helper\ValidatorTrait;
-use Kerox\Messenger\Model\Message\AbstractAttachment;
-use Kerox\Messenger\Request\SendRequest;
-use Kerox\Messenger\Response\SendResponse;
-use Kerox\Messenger\SendInterface;
+use Involix\Messenger\Exception\InvalidOptionException;
+use Involix\Messenger\Exception\InvalidRecipientException;
+use Involix\Messenger\Exception\InvalidTypeException;
+use Involix\Messenger\Helper\ValidatorTrait;
+use Involix\Messenger\Model\Message\AbstractAttachment;
+use Involix\Messenger\Request\SendRequest;
+use Involix\Messenger\Response\SendResponse;
+use Involix\Messenger\SendInterface;
 
 class Send extends AbstractApi implements SendInterface
 {
@@ -38,7 +38,7 @@ class Send extends AbstractApi implements SendInterface
     /**
      * @param string|array $recipient
      *
-     * @throws \Kerox\Messenger\Exception\MessengerException
+     * @throws \Involix\Messenger\Exception\MessengerException
      */
     public function action($recipient, string $action, array $options = []): SendResponse
     {
@@ -68,7 +68,7 @@ class Send extends AbstractApi implements SendInterface
     /**
      * @param mixed $recipient
      *
-     * @throws \Kerox\Messenger\Exception\InvalidRecipientException
+     * @throws \Involix\Messenger\Exception\InvalidRecipientException
      */
     private function isValidRecipient($recipient): void
     {
@@ -80,7 +80,7 @@ class Send extends AbstractApi implements SendInterface
     /**
      * @param mixed $message
      *
-     * @throws \Kerox\Messenger\Exception\MessengerException
+     * @throws \Involix\Messenger\Exception\MessengerException
      */
     private function isValidOptions(array $options, $message = null): void
     {
@@ -101,7 +101,7 @@ class Send extends AbstractApi implements SendInterface
     }
 
     /**
-     * @throws \Kerox\Messenger\Exception\MessengerException
+     * @throws \Involix\Messenger\Exception\MessengerException
      */
     private function isValidMessagingType(string $messagingType): void
     {

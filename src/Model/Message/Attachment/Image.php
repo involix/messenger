@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Kerox\Messenger\Model\Message\Attachment;
+namespace Involix\Messenger\Model\Message\Attachment;
 
-use Kerox\Messenger\Model\Message\AbstractAttachment;
+use Involix\Messenger\Model\Message\AbstractAttachment;
 
 class Image extends File
 {
@@ -13,7 +13,7 @@ class Image extends File
     /**
      * Image constructor.
      *
-     * @throws \Kerox\Messenger\Exception\MessengerException
+     * @throws \Involix\Messenger\Exception\MessengerException
      */
     public function __construct(string $url, ?bool $reusable = null)
     {
@@ -23,9 +23,9 @@ class Image extends File
     }
 
     /**
-     * @throws \Kerox\Messenger\Exception\MessengerException
+     * @throws \Involix\Messenger\Exception\MessengerException
      *
-     * @return \Kerox\Messenger\Model\Message\Attachment\File
+     * @return \Involix\Messenger\Model\Message\Attachment\File
      */
     public static function create(string $url, ?bool $reusable = null): File
     {

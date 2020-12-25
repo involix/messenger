@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Kerox\Messenger\Event;
+namespace Involix\Messenger\Event;
 
-use Kerox\Messenger\Model\Callback\Payment;
+use Involix\Messenger\Model\Callback\Payment;
 
 class PaymentEvent extends AbstractEvent
 {
@@ -16,7 +16,7 @@ class PaymentEvent extends AbstractEvent
     protected $timestamp;
 
     /**
-     * @var \Kerox\Messenger\Model\Callback\Payment
+     * @var \Involix\Messenger\Model\Callback\Payment
      */
     protected $payment;
 
@@ -47,7 +47,7 @@ class PaymentEvent extends AbstractEvent
     }
 
     /**
-     * @return \Kerox\Messenger\Event\PaymentEvent
+     * @return \Involix\Messenger\Event\PaymentEvent
      */
     public static function create(array $payload): self
     {

@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace Kerox\Messenger\Model;
+namespace Involix\Messenger\Model;
 
-use Kerox\Messenger\Exception\InvalidClassException;
-use Kerox\Messenger\Exception\MessengerException;
-use Kerox\Messenger\Helper\ValidatorTrait;
-use Kerox\Messenger\Model\Message\AbstractAttachment;
-use Kerox\Messenger\Model\Message\QuickReply;
+use Involix\Messenger\Exception\InvalidClassException;
+use Involix\Messenger\Exception\MessengerException;
+use Involix\Messenger\Helper\ValidatorTrait;
+use Involix\Messenger\Model\Message\AbstractAttachment;
+use Involix\Messenger\Model\Message\QuickReply;
 
 class Message implements \JsonSerializable
 {
@@ -23,12 +23,12 @@ class Message implements \JsonSerializable
     protected $type;
 
     /**
-     * @var \Kerox\Messenger\Model\Message\AbstractAttachment|string
+     * @var \Involix\Messenger\Model\Message\AbstractAttachment|string
      */
     protected $message;
 
     /**
-     * @var \Kerox\Messenger\Model\Message\QuickReply[]
+     * @var \Involix\Messenger\Model\Message\QuickReply[]
      */
     protected $quickReplies = [];
 
@@ -40,7 +40,7 @@ class Message implements \JsonSerializable
     /**
      * Message constructor.
      *
-     * @param \Kerox\Messenger\Model\Message\AbstractAttachment|string $message
+     * @param \Involix\Messenger\Model\Message\AbstractAttachment|string $message
      *
      * @throws \Exception
      */
@@ -59,11 +59,11 @@ class Message implements \JsonSerializable
     }
 
     /**
-     * @param \Kerox\Messenger\Model\Message\AbstractAttachment|string $message
+     * @param \Involix\Messenger\Model\Message\AbstractAttachment|string $message
      *
      * @throws \Exception
      *
-     * @return \Kerox\Messenger\Model\Message
+     * @return \Involix\Messenger\Model\Message
      */
     public static function create($message): self
     {
@@ -71,11 +71,11 @@ class Message implements \JsonSerializable
     }
 
     /**
-     * @param \Kerox\Messenger\Model\Message\QuickReply[] $quickReplies
+     * @param \Involix\Messenger\Model\Message\QuickReply[] $quickReplies
      *
      * @throws \Exception
      *
-     * @return \Kerox\Messenger\Model\Message
+     * @return \Involix\Messenger\Model\Message
      */
     public function setQuickReplies(array $quickReplies): self
     {
@@ -87,9 +87,9 @@ class Message implements \JsonSerializable
     }
 
     /**
-     * @throws \Kerox\Messenger\Exception\MessengerException
+     * @throws \Involix\Messenger\Exception\MessengerException
      *
-     * @return \Kerox\Messenger\Model\Message
+     * @return \Involix\Messenger\Model\Message
      */
     public function addQuickReply(QuickReply $quickReply): self
     {
@@ -101,7 +101,7 @@ class Message implements \JsonSerializable
     }
 
     /**
-     * @throws \Kerox\Messenger\Exception\MessengerException
+     * @throws \Involix\Messenger\Exception\MessengerException
      *
      * @return Message
      */
@@ -115,7 +115,7 @@ class Message implements \JsonSerializable
     }
 
     /**
-     * @throws \Kerox\Messenger\Exception\MessengerException
+     * @throws \Involix\Messenger\Exception\MessengerException
      */
     private function isValidQuickReplies(array $quickReplies): void
     {

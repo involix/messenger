@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Kerox\Messenger\Model\Message\Attachment\Template\Element;
+namespace Involix\Messenger\Model\Message\Attachment\Template\Element;
 
-use Kerox\Messenger\Helper\ValidatorTrait;
+use Involix\Messenger\Helper\ValidatorTrait;
 
 abstract class AbstractElement implements \JsonSerializable
 {
@@ -28,7 +28,7 @@ abstract class AbstractElement implements \JsonSerializable
     /**
      * AbstractElement constructor.
      *
-     * @throws \Kerox\Messenger\Exception\MessengerException
+     * @throws \Involix\Messenger\Exception\MessengerException
      */
     public function __construct(string $title)
     {
@@ -38,7 +38,7 @@ abstract class AbstractElement implements \JsonSerializable
     }
 
     /**
-     * @throws \Kerox\Messenger\Exception\MessengerException
+     * @throws \Involix\Messenger\Exception\MessengerException
      *
      * @return mixed
      */
@@ -50,7 +50,7 @@ abstract class AbstractElement implements \JsonSerializable
     }
 
     /**
-     * @throws \Kerox\Messenger\Exception\MessengerException
+     * @throws \Involix\Messenger\Exception\MessengerException
      *
      * @return mixed
      */

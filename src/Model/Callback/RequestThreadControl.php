@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Kerox\Messenger\Model\Callback;
+namespace Involix\Messenger\Model\Callback;
 
 class RequestThreadControl
 {
@@ -36,7 +36,7 @@ class RequestThreadControl
     }
 
     /**
-     * @return \Kerox\Messenger\Model\Callback\RequestThreadControl
+     * @return \Involix\Messenger\Model\Callback\RequestThreadControl
      */
     public static function create(array $callbackData): self
     {

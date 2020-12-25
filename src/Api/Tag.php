@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Kerox\Messenger\Api;
+namespace Involix\Messenger\Api;
 
-use Kerox\Messenger\Request\TagRequest;
-use Kerox\Messenger\Response\TagResponse;
+use Involix\Messenger\Request\TagRequest;
+use Involix\Messenger\Response\TagResponse;
 
 class Tag extends AbstractApi
 {

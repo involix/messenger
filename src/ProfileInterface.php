@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Kerox\Messenger;
+namespace Involix\Messenger;
 
 interface ProfileInterface
 {

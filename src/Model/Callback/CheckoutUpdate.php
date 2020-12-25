@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Kerox\Messenger\Model\Callback;
+namespace Involix\Messenger\Model\Callback;
 
-use Kerox\Messenger\Model\Common\Address;
+use Involix\Messenger\Model\Common\Address;
 
 class CheckoutUpdate
 {
@@ -14,7 +14,7 @@ class CheckoutUpdate
     protected $payload;
 
     /**
-     * @var \Kerox\Messenger\Model\Common\Address
+     * @var \Involix\Messenger\Model\Common\Address
      */
     protected $shippingAddress;
 
@@ -38,7 +38,7 @@ class CheckoutUpdate
     }
 
     /**
-     * @return \Kerox\Messenger\Model\Callback\CheckoutUpdate
+     * @return \Involix\Messenger\Model\Callback\CheckoutUpdate
      */
     public static function create(array $callbackData): self
     {

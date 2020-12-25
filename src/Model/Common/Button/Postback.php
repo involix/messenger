@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Kerox\Messenger\Model\Common\Button;
+namespace Involix\Messenger\Model\Common\Button;
 
 class Postback extends AbstractButton
 {
@@ -19,7 +19,7 @@ class Postback extends AbstractButton
     /**
      * Postback constructor.
      *
-     * @throws \Kerox\Messenger\Exception\MessengerException
+     * @throws \Involix\Messenger\Exception\MessengerException
      */
     public function __construct(string $title, string $payload)
     {
@@ -33,9 +33,9 @@ class Postback extends AbstractButton
     }
 
     /**
-     * @throws \Kerox\Messenger\Exception\MessengerException
+     * @throws \Involix\Messenger\Exception\MessengerException
      *
-     * @return \Kerox\Messenger\Model\Common\Button\Postback
+     * @return \Involix\Messenger\Model\Common\Button\Postback
      */
     public static function create(string $title, string $payload): self
     {

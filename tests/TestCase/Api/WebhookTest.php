@@ -2,23 +2,23 @@
 
 declare(strict_types=1);
 
-namespace Kerox\Messenger\Tests\TestCase\Api;
+namespace Involix\Messenger\Tests\TestCase\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\Handler\MockHandler;
 use GuzzleHttp\HandlerStack;
 use GuzzleHttp\Psr7\Response;
 use GuzzleHttp\Psr7\ServerRequest;
-use Kerox\Messenger\Api\Webhook;
-use Kerox\Messenger\Event\MessageEvent;
-use Kerox\Messenger\Model\Callback\Entry;
-use Kerox\Messenger\Model\Callback\Message;
+use Involix\Messenger\Api\Webhook;
+use Involix\Messenger\Event\MessageEvent;
+use Involix\Messenger\Model\Callback\Entry;
+use Involix\Messenger\Model\Callback\Message;
 use PHPUnit\Framework\TestCase;
 
 class WebhookTest extends TestCase
 {
     /**
-     * @var \Kerox\Messenger\Api\Webhook
+     * @var \Involix\Messenger\Api\Webhook
      */
     protected $webhookApi;
 

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Kerox\Messenger\Model\Common\Button;
+namespace Involix\Messenger\Model\Common\Button;
 
 class AccountLink extends AbstractButton
 {
@@ -14,7 +14,7 @@ class AccountLink extends AbstractButton
     /**
      * AccountLink constructor.
      *
-     * @throws \Kerox\Messenger\Exception\MessengerException
+     * @throws \Involix\Messenger\Exception\MessengerException
      */
     public function __construct(string $url)
     {
@@ -26,9 +26,9 @@ class AccountLink extends AbstractButton
     }
 
     /**
-     * @throws \Kerox\Messenger\Exception\MessengerException
+     * @throws \Involix\Messenger\Exception\MessengerException
      *
-     * @return \Kerox\Messenger\Model\Common\Button\AccountLink
+     * @return \Involix\Messenger\Model\Common\Button\AccountLink
      */
     public static function create(string $url): self
     {

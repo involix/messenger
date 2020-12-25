@@ -2,30 +2,30 @@
 
 declare(strict_types=1);
 
-namespace Kerox\Messenger\Tests\TestCase\Api;
+namespace Involix\Messenger\Tests\TestCase\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\Handler\MockHandler;
 use GuzzleHttp\HandlerStack;
 use GuzzleHttp\Psr7\Response;
-use Kerox\Messenger\Api\Send;
-use Kerox\Messenger\Exception\InvalidOptionException;
-use Kerox\Messenger\Exception\InvalidRecipientException;
-use Kerox\Messenger\Exception\MessengerException;
-use Kerox\Messenger\Model\Common\Address;
-use Kerox\Messenger\Model\Message\Attachment\Image;
-use Kerox\Messenger\Model\Message\Attachment\Template\Element\ReceiptElement;
-use Kerox\Messenger\Model\Message\Attachment\Template\Receipt\Adjustment;
-use Kerox\Messenger\Model\Message\Attachment\Template\Receipt\Summary;
-use Kerox\Messenger\Model\Message\Attachment\Template\ReceiptTemplate;
-use Kerox\Messenger\Request\SendRequest;
-use Kerox\Messenger\SendInterface;
+use Involix\Messenger\Api\Send;
+use Involix\Messenger\Exception\InvalidOptionException;
+use Involix\Messenger\Exception\InvalidRecipientException;
+use Involix\Messenger\Exception\MessengerException;
+use Involix\Messenger\Model\Common\Address;
+use Involix\Messenger\Model\Message\Attachment\Image;
+use Involix\Messenger\Model\Message\Attachment\Template\Element\ReceiptElement;
+use Involix\Messenger\Model\Message\Attachment\Template\Receipt\Adjustment;
+use Involix\Messenger\Model\Message\Attachment\Template\Receipt\Summary;
+use Involix\Messenger\Model\Message\Attachment\Template\ReceiptTemplate;
+use Involix\Messenger\Request\SendRequest;
+use Involix\Messenger\SendInterface;
 use PHPUnit\Framework\TestCase;
 
 class SendTest extends TestCase
 {
     /**
-     * @var \Kerox\Messenger\Api\Send
+     * @var \Involix\Messenger\Api\Send
      */
     protected $sendApi;
 
@@ -105,7 +105,7 @@ class SendTest extends TestCase
     public function testInvalidMessage(): void
     {
         $this->expectException(MessengerException::class);
-        $this->expectExceptionMessage('"message" must be a string or an instance of "Kerox\Messenger\Model\Message" or "Kerox\Messenger\Model\Message\AbstractAttachment".');
+        $this->expectExceptionMessage('"message" must be a string or an instance of "Involix\Messenger\Model\Message" or "Involix\Messenger\Model\Message\AbstractAttachment".');
         $this->sendApi->message('1008372609250235', 1234);
     }
 
@@ -159,7 +159,7 @@ class SendTest extends TestCase
         $message = $this->getReceipt();
 
         $this->expectException(MessengerException::class);
-        $this->expectExceptionMessage('"message" must be an instance of "Kerox\Messenger\Model\Message\Attachment\Template\GenericTemplate" if tag is set to "ISSUE_RESOLUTION".');
+        $this->expectExceptionMessage('"message" must be an instance of "Involix\Messenger\Model\Message\Attachment\Template\GenericTemplate" if tag is set to "ISSUE_RESOLUTION".');
         $this->sendApi->message('1008372609250235', $message, [
             'notification_type' => SendInterface::NOTIFICATION_TYPE_REGULAR,
             'tag' => SendInterface::TAG_ISSUE_RESOLUTION,

@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Kerox\Messenger\Tests\TestCase\Model\Message\Attachment\Template\Element;
+namespace Involix\Messenger\Tests\TestCase\Model\Message\Attachment\Template\Element;
 
-use Kerox\Messenger\Exception\MessengerException;
-use Kerox\Messenger\Model\Common\Button\Postback;
-use Kerox\Messenger\Model\Message\Attachment\Template\Element\MediaElement;
+use Involix\Messenger\Exception\MessengerException;
+use Involix\Messenger\Model\Common\Button\Postback;
+use Involix\Messenger\Model\Message\Attachment\Template\Element\MediaElement;
 use PHPUnit\Framework\TestCase;
 
 class MediaElementTest extends TestCase

@@ -2,15 +2,15 @@
 
 declare(strict_types=1);
 
-namespace Kerox\Messenger\Tests\TestCase\Api;
+namespace Involix\Messenger\Tests\TestCase\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\Handler\MockHandler;
 use GuzzleHttp\HandlerStack;
 use GuzzleHttp\Psr7\Response;
-use Kerox\Messenger\Api\Persona;
-use Kerox\Messenger\Model\Data;
-use Kerox\Messenger\Model\PersonaSettings;
+use Involix\Messenger\Api\Persona;
+use Involix\Messenger\Model\Data;
+use Involix\Messenger\Model\PersonaSettings;
 use PHPUnit\Framework\TestCase;
 
 class PersonaTest extends TestCase

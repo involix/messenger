@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Kerox\Messenger\Tests\TestCase\Model\Callback;
+namespace Involix\Messenger\Tests\TestCase\Model\Callback;
 
-use Kerox\Messenger\Model\Callback\Message;
+use Involix\Messenger\Model\Callback\Message;
 use PHPUnit\Framework\TestCase;
 
 class MessageTest extends TestCase

@@ -2,18 +2,18 @@
 
 declare(strict_types=1);
 
-namespace Kerox\Messenger\Api;
+namespace Involix\Messenger\Api;
 
-use Kerox\Messenger\Exception\InvalidKeyException;
-use Kerox\Messenger\Exception\InvalidTypeException;
-use Kerox\Messenger\NlpInterface;
-use Kerox\Messenger\Request\NlpRequest;
-use Kerox\Messenger\Response\NlpResponse;
+use Involix\Messenger\Exception\InvalidKeyException;
+use Involix\Messenger\Exception\InvalidTypeException;
+use Involix\Messenger\NlpInterface;
+use Involix\Messenger\Request\NlpRequest;
+use Involix\Messenger\Response\NlpResponse;
 
 class Nlp extends AbstractApi implements NlpInterface
 {
     /**
-     * @throws \Kerox\Messenger\Exception\MessengerException
+     * @throws \Involix\Messenger\Exception\MessengerException
      */
     public function config(array $configs = []): NlpResponse
     {
@@ -26,7 +26,7 @@ class Nlp extends AbstractApi implements NlpInterface
     }
 
     /**
-     * @throws \Kerox\Messenger\Exception\MessengerException
+     * @throws \Involix\Messenger\Exception\MessengerException
      */
     private function isValidConfigs(array $configs): void
     {
@@ -48,7 +48,7 @@ class Nlp extends AbstractApi implements NlpInterface
      * @param int|string $key
      * @param mixed      $value
      *
-     * @throws \Kerox\Messenger\Exception\MessengerException
+     * @throws \Involix\Messenger\Exception\MessengerException
      */
     private function isBool($key, $value): void
     {
@@ -63,7 +63,7 @@ class Nlp extends AbstractApi implements NlpInterface
      * @param int|string $key
      * @param mixed      $value
      *
-     * @throws \Kerox\Messenger\Exception\MessengerException
+     * @throws \Involix\Messenger\Exception\MessengerException
      */
     private function isString($key, $value): void
     {
@@ -78,7 +78,7 @@ class Nlp extends AbstractApi implements NlpInterface
      * @param int|string $key
      * @param mixed      $value
      *
-     * @throws \Kerox\Messenger\Exception\MessengerException
+     * @throws \Involix\Messenger\Exception\MessengerException
      */
     private function isValidNBest($key, $value): void
     {

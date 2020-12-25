@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Kerox\Messenger\Model;
+namespace Involix\Messenger\Model;
 
-use Kerox\Messenger\Helper\ValidatorTrait;
+use Involix\Messenger\Helper\ValidatorTrait;
 
 class ThreadControl implements \JsonSerializable
 {
@@ -35,7 +35,7 @@ class ThreadControl implements \JsonSerializable
     }
 
     /**
-     * @return \Kerox\Messenger\Model\ThreadControl
+     * @return \Involix\Messenger\Model\ThreadControl
      */
     public static function create(int $recipientId, ?int $targetAppId = null): self
     {

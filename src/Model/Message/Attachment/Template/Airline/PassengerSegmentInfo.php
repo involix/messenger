@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Kerox\Messenger\Model\Message\Attachment\Template\Airline;
+namespace Involix\Messenger\Model\Message\Attachment\Template\Airline;
 
-use Kerox\Messenger\Helper\ValidatorTrait;
+use Involix\Messenger\Helper\ValidatorTrait;
 
 class PassengerSegmentInfo implements \JsonSerializable
 {
@@ -47,7 +47,7 @@ class PassengerSegmentInfo implements \JsonSerializable
     }
 
     /**
-     * @return \Kerox\Messenger\Model\Message\Attachment\Template\Airline\PassengerSegmentInfo
+     * @return \Involix\Messenger\Model\Message\Attachment\Template\Airline\PassengerSegmentInfo
      */
     public static function create(string $segmentId, string $passengerId, string $seat, string $seatType): self
     {
@@ -55,9 +55,9 @@ class PassengerSegmentInfo implements \JsonSerializable
     }
 
     /**
-     * @throws \Kerox\Messenger\Exception\MessengerException
+     * @throws \Involix\Messenger\Exception\MessengerException
      *
-     * @return \Kerox\Messenger\Model\Message\Attachment\Template\Airline\PassengerSegmentInfo
+     * @return \Involix\Messenger\Model\Message\Attachment\Template\Airline\PassengerSegmentInfo
      */
     public function addProductInfo(string $title, string $value): self
     {

@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Kerox\Messenger\Model\Common\Button;
+namespace Involix\Messenger\Model\Common\Button;
 
-use Kerox\Messenger\Helper\ValidatorTrait;
+use Involix\Messenger\Helper\ValidatorTrait;
 
 abstract class AbstractButton implements \JsonSerializable
 {

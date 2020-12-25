@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Kerox\Messenger\Model\Callback;
+namespace Involix\Messenger\Model\Callback;
 
 class AppRoles
 {
@@ -25,7 +25,7 @@ class AppRoles
     }
 
     /**
-     * @return \Kerox\Messenger\Model\Callback\AppRoles
+     * @return \Involix\Messenger\Model\Callback\AppRoles
      */
     public static function create(array $callbackData): self
     {

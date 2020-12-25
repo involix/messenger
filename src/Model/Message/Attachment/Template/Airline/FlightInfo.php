@@ -2,16 +2,16 @@
 
 declare(strict_types=1);
 
-namespace Kerox\Messenger\Model\Message\Attachment\Template\Airline;
+namespace Involix\Messenger\Model\Message\Attachment\Template\Airline;
 
 class FlightInfo extends AbstractFlightInfo
 {
     /**
-     * @param \Kerox\Messenger\Model\Message\Attachment\Template\Airline\Airport        $departureAirport
-     * @param \Kerox\Messenger\Model\Message\Attachment\Template\Airline\Airport        $arrivalAirport
-     * @param \Kerox\Messenger\Model\Message\Attachment\Template\Airline\FlightSchedule $flightSchedule
+     * @param \Involix\Messenger\Model\Message\Attachment\Template\Airline\Airport        $departureAirport
+     * @param \Involix\Messenger\Model\Message\Attachment\Template\Airline\Airport        $arrivalAirport
+     * @param \Involix\Messenger\Model\Message\Attachment\Template\Airline\FlightSchedule $flightSchedule
      *
-     * @return \Kerox\Messenger\Model\Message\Attachment\Template\Airline\FlightInfo
+     * @return \Involix\Messenger\Model\Message\Attachment\Template\Airline\FlightInfo
      */
     public static function create(
         string $flightNumber,

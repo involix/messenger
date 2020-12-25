@@ -2,20 +2,20 @@
 
 declare(strict_types=1);
 
-namespace Kerox\Messenger\Tests\TestCase\Api;
+namespace Involix\Messenger\Tests\TestCase\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\Handler\MockHandler;
 use GuzzleHttp\HandlerStack;
 use GuzzleHttp\Psr7\Response;
-use Kerox\Messenger\Api\User;
-use Kerox\Messenger\Exception\MessengerException;
+use Involix\Messenger\Api\User;
+use Involix\Messenger\Exception\MessengerException;
 use PHPUnit\Framework\TestCase;
 
 class UserTest extends TestCase
 {
     /**
-     * @var \Kerox\Messenger\Api\User
+     * @var \Involix\Messenger\Api\User
      */
     protected $userApi;
 

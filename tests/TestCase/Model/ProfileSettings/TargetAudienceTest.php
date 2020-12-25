@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Kerox\Messenger\Tests\TestCase\Model\ProfileSettings;
+namespace Involix\Messenger\Tests\TestCase\Model\ProfileSettings;
 
-use Kerox\Messenger\Exception\MessengerException;
-use Kerox\Messenger\Model\ProfileSettings\TargetAudience;
+use Involix\Messenger\Exception\MessengerException;
+use Involix\Messenger\Model\ProfileSettings\TargetAudience;
 use PHPUnit\Framework\TestCase;
 
 class TargetAudienceTest extends TestCase

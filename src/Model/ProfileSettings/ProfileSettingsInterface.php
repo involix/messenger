@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Kerox\Messenger\Model\ProfileSettings;
+namespace Involix\Messenger\Model\ProfileSettings;
 
 interface ProfileSettingsInterface
 {

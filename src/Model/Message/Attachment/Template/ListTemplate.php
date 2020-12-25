@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Kerox\Messenger\Model\Message\Attachment\Template;
+namespace Involix\Messenger\Model\Message\Attachment\Template;
 
-use Kerox\Messenger\Exception\InvalidKeyException;
-use Kerox\Messenger\Model\Message\Attachment\AbstractTemplate;
+use Involix\Messenger\Exception\InvalidKeyException;
+use Involix\Messenger\Model\Message\Attachment\AbstractTemplate;
 
 /**
  * @deprecated Since version 3.2.0 and will be removed in version 4.0.0.
@@ -21,21 +21,21 @@ class ListTemplate extends AbstractTemplate
     protected $topElementStyle;
 
     /**
-     * @var \Kerox\Messenger\Model\Message\Attachment\Template\Element\ListElement[]
+     * @var \Involix\Messenger\Model\Message\Attachment\Template\Element\ListElement[]
      */
     protected $elements = [];
 
     /**
-     * @var \Kerox\Messenger\Model\Common\Button\AbstractButton[]
+     * @var \Involix\Messenger\Model\Common\Button\AbstractButton[]
      */
     protected $buttons = [];
 
     /**
      * Liste constructor.
      *
-     * @param \Kerox\Messenger\Model\Message\Attachment\Template\Element\ListElement[] $elements
+     * @param \Involix\Messenger\Model\Message\Attachment\Template\Element\ListElement[] $elements
      *
-     * @throws \Kerox\Messenger\Exception\MessengerException
+     * @throws \Involix\Messenger\Exception\MessengerException
      */
     public function __construct(array $elements)
     {
@@ -47,9 +47,9 @@ class ListTemplate extends AbstractTemplate
     }
 
     /**
-     *@throws \Kerox\Messenger\Exception\MessengerException
+     *@throws \Involix\Messenger\Exception\MessengerException
      *
-     * @return \Kerox\Messenger\Model\Message\Attachment\Template\ListTemplate
+     * @return \Involix\Messenger\Model\Message\Attachment\Template\ListTemplate
      */
     public static function create(array $elements): self
     {
@@ -57,9 +57,9 @@ class ListTemplate extends AbstractTemplate
     }
 
     /**
-     *@throws \Kerox\Messenger\Exception\MessengerException
+     *@throws \Involix\Messenger\Exception\MessengerException
      *
-     * @return \Kerox\Messenger\Model\Message\Attachment\Template\ListTemplate
+     * @return \Involix\Messenger\Model\Message\Attachment\Template\ListTemplate
      */
     public function setTopElementStyle(string $topElementStyle): self
     {
@@ -71,11 +71,11 @@ class ListTemplate extends AbstractTemplate
     }
 
     /**
-     * @param \Kerox\Messenger\Model\Common\Button\AbstractButton[] $buttons
+     * @param \Involix\Messenger\Model\Common\Button\AbstractButton[] $buttons
      *
-     *@throws \Kerox\Messenger\Exception\MessengerException
+     *@throws \Involix\Messenger\Exception\MessengerException
      *
-     * @return \Kerox\Messenger\Model\Message\Attachment\Template\ListTemplate
+     * @return \Involix\Messenger\Model\Message\Attachment\Template\ListTemplate
      */
     public function setButtons(array $buttons): self
     {
@@ -87,7 +87,7 @@ class ListTemplate extends AbstractTemplate
     }
 
     /**
-     * @throws \Kerox\Messenger\Exception\MessengerException
+     * @throws \Involix\Messenger\Exception\MessengerException
      */
     private function isValidTopElementStyle(string $topElementStyle): void
     {

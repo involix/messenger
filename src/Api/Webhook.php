@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace Kerox\Messenger\Api;
+namespace Involix\Messenger\Api;
 
 use GuzzleHttp\ClientInterface;
 use GuzzleHttp\Psr7\ServerRequest;
-use Kerox\Messenger\Model\Callback\Entry;
-use Kerox\Messenger\Request\WebhookRequest;
-use Kerox\Messenger\Response\WebhookResponse;
+use Involix\Messenger\Model\Callback\Entry;
+use Involix\Messenger\Request\WebhookRequest;
+use Involix\Messenger\Response\WebhookResponse;
 use Psr\Http\Message\ServerRequestInterface;
 
 class Webhook extends AbstractApi
@@ -39,7 +39,7 @@ class Webhook extends AbstractApi
     protected $decodedBody;
 
     /**
-     * @var \Kerox\Messenger\Model\Callback\Entry[]
+     * @var \Involix\Messenger\Model\Callback\Entry[]
      */
     protected $hydratedEntries;
 
@@ -137,7 +137,7 @@ class Webhook extends AbstractApi
     /**
      * @throws \Exception
      *
-     * @return \Kerox\Messenger\Model\Callback\Entry[]
+     * @return \Involix\Messenger\Model\Callback\Entry[]
      */
     public function getCallbackEntries(): array
     {
@@ -151,7 +151,7 @@ class Webhook extends AbstractApi
     {
         $events = [];
         foreach ($this->getHydratedEntries() as $hydratedEntry) {
-            /** @var \Kerox\Messenger\Model\Callback\Entry $hydratedEntry */
+            /** @var \Involix\Messenger\Model\Callback\Entry $hydratedEntry */
             $events = array_merge($events, $hydratedEntry->getEvents());
         }
 
@@ -161,7 +161,7 @@ class Webhook extends AbstractApi
     /**
      * @throws \Exception
      *
-     * @return \Kerox\Messenger\Model\Callback\Entry[]
+     * @return \Involix\Messenger\Model\Callback\Entry[]
      */
     private function getHydratedEntries(): array
     {

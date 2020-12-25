@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Kerox\Messenger\Model\Callback;
+namespace Involix\Messenger\Model\Callback;
 
 class MessageEcho extends Message
 {
@@ -56,7 +56,7 @@ class MessageEcho extends Message
     }
 
     /**
-     * @return \Kerox\Messenger\Model\Callback\MessageEcho
+     * @return \Involix\Messenger\Model\Callback\MessageEcho
      */
     public static function create(array $callbackData)
     {

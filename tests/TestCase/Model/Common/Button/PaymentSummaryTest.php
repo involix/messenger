@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Kerox\Messenger\Tests\TestCase\Model\Common\Button;
+namespace Involix\Messenger\Tests\TestCase\Model\Common\Button;
 
-use Kerox\Messenger\Exception\MessengerException;
-use Kerox\Messenger\Model\Common\Button\Payment\PaymentSummary;
-use Kerox\Messenger\Model\Common\Button\Payment\PriceList;
+use Involix\Messenger\Exception\MessengerException;
+use Involix\Messenger\Model\Common\Button\Payment\PaymentSummary;
+use Involix\Messenger\Model\Common\Button\Payment\PriceList;
 use PHPUnit\Framework\TestCase;
 
 class PaymentSummaryTest extends TestCase

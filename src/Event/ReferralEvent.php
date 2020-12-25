@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Kerox\Messenger\Event;
+namespace Involix\Messenger\Event;
 
-use Kerox\Messenger\Model\Callback\Referral;
+use Involix\Messenger\Model\Callback\Referral;
 
 class ReferralEvent extends AbstractEvent
 {
@@ -16,7 +16,7 @@ class ReferralEvent extends AbstractEvent
     protected $timestamp;
 
     /**
-     * @var \Kerox\Messenger\Model\Callback\Referral
+     * @var \Involix\Messenger\Model\Callback\Referral
      */
     protected $referral;
 
@@ -47,7 +47,7 @@ class ReferralEvent extends AbstractEvent
     }
 
     /**
-     * @return \Kerox\Messenger\Event\ReferralEvent
+     * @return \Involix\Messenger\Event\ReferralEvent
      */
     public static function create(array $payload): self
     {

@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Kerox\Messenger\Tests\TestCase\Response;
+namespace Involix\Messenger\Tests\TestCase\Response;
 
 use GuzzleHttp\Psr7\Response;
-use Kerox\Messenger\Response\SendResponse;
+use Involix\Messenger\Response\SendResponse;
 use PHPUnit\Framework\TestCase;
 
 class SendResponseTest extends TestCase

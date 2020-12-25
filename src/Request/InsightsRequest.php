@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Kerox\Messenger\Request;
+namespace Involix\Messenger\Request;
 
-use Kerox\Messenger\Helper\UtilityTrait;
+use Involix\Messenger\Helper\UtilityTrait;
 
 class InsightsRequest extends AbstractRequest
 {

@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Kerox\Messenger\Response;
+namespace Involix\Messenger\Response;
 
-use Kerox\Messenger\UserInterface;
+use Involix\Messenger\UserInterface;
 
 class UserResponse extends AbstractResponse implements UserInterface
 {

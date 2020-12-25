@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Kerox\Messenger\Model\Message\Attachment\Template;
+namespace Involix\Messenger\Model\Message\Attachment\Template;
 
-use Kerox\Messenger\Model\Message\Attachment\AbstractTemplate;
+use Involix\Messenger\Model\Message\Attachment\AbstractTemplate;
 
 /**
  * @deprecated Since version 3.2.0 and will be removed in version 4.0.0.
@@ -12,16 +12,16 @@ use Kerox\Messenger\Model\Message\Attachment\AbstractTemplate;
 class OpenGraphTemplate extends AbstractTemplate
 {
     /**
-     * @var \Kerox\Messenger\Model\Message\Attachment\Template\Element\OpenGraphElement[]
+     * @var \Involix\Messenger\Model\Message\Attachment\Template\Element\OpenGraphElement[]
      */
     protected $elements = [];
 
     /**
      * OpenGraph constructor.
      *
-     * @param \Kerox\Messenger\Model\Message\Attachment\Template\Element\OpenGraphElement[] $elements
+     * @param \Involix\Messenger\Model\Message\Attachment\Template\Element\OpenGraphElement[] $elements
      *
-     * @throws \Kerox\Messenger\Exception\MessengerException
+     * @throws \Involix\Messenger\Exception\MessengerException
      */
     public function __construct(array $elements)
     {
@@ -33,9 +33,9 @@ class OpenGraphTemplate extends AbstractTemplate
     }
 
     /**
-     *@throws \Kerox\Messenger\Exception\MessengerException
+     *@throws \Involix\Messenger\Exception\MessengerException
      *
-     * @return \Kerox\Messenger\Model\Message\Attachment\Template\OpenGraphTemplate
+     * @return \Involix\Messenger\Model\Message\Attachment\Template\OpenGraphTemplate
      */
     public static function create(array $elements): self
     {

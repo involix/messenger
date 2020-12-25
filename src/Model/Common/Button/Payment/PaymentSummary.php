@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Kerox\Messenger\Model\Common\Button\Payment;
+namespace Involix\Messenger\Model\Common\Button\Payment;
 
-use Kerox\Messenger\Exception\InvalidKeyException;
-use Kerox\Messenger\Exception\InvalidTypeException;
+use Involix\Messenger\Exception\InvalidKeyException;
+use Involix\Messenger\Exception\InvalidTypeException;
 
 class PaymentSummary implements \JsonSerializable
 {
@@ -52,7 +52,7 @@ class PaymentSummary implements \JsonSerializable
      *
      * @param PriceList[] $priceList
      *
-     * @throws \Kerox\Messenger\Exception\MessengerException
+     * @throws \Involix\Messenger\Exception\MessengerException
      */
     public function __construct(
         string $currency,
@@ -72,9 +72,9 @@ class PaymentSummary implements \JsonSerializable
     }
 
     /**
-     * @throws \Kerox\Messenger\Exception\MessengerException
+     * @throws \Involix\Messenger\Exception\MessengerException
      *
-     * @return \Kerox\Messenger\Model\Common\Button\Payment\PaymentSummary
+     * @return \Involix\Messenger\Model\Common\Button\Payment\PaymentSummary
      */
     public static function create(
         string $currency,
@@ -107,7 +107,7 @@ class PaymentSummary implements \JsonSerializable
     }
 
     /**
-     * @throws \Kerox\Messenger\Exception\MessengerException
+     * @throws \Involix\Messenger\Exception\MessengerException
      */
     private function isValidPaymentType(string $paymentType): void
     {
@@ -126,7 +126,7 @@ class PaymentSummary implements \JsonSerializable
     }
 
     /**
-     * @throws \Kerox\Messenger\Exception\MessengerException
+     * @throws \Involix\Messenger\Exception\MessengerException
      */
     private function isValidRequestedUserInfo(array $requestedUserInfo): void
     {

@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Kerox\Messenger\Event;
+namespace Involix\Messenger\Event;
 
-use Kerox\Messenger\Model\Callback\PreCheckout;
+use Involix\Messenger\Model\Callback\PreCheckout;
 
 class PreCheckoutEvent extends AbstractEvent
 {
@@ -16,7 +16,7 @@ class PreCheckoutEvent extends AbstractEvent
     protected $timestamp;
 
     /**
-     * @var \Kerox\Messenger\Model\Callback\PreCheckout
+     * @var \Involix\Messenger\Model\Callback\PreCheckout
      */
     protected $preCheckout;
 
@@ -47,7 +47,7 @@ class PreCheckoutEvent extends AbstractEvent
     }
 
     /**
-     * @return \Kerox\Messenger\Event\PreCheckoutEvent
+     * @return \Involix\Messenger\Event\PreCheckoutEvent
      */
     public static function create(array $payload): self
     {

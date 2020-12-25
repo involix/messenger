@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Kerox\Messenger\Event;
+namespace Involix\Messenger\Event;
 
-use Kerox\Messenger\Model\Callback\PolicyEnforcement;
+use Involix\Messenger\Model\Callback\PolicyEnforcement;
 
 class PolicyEnforcementEvent extends AbstractEvent
 {
@@ -16,7 +16,7 @@ class PolicyEnforcementEvent extends AbstractEvent
     protected $timestamp;
 
     /**
-     * @var \Kerox\Messenger\Model\Callback\PolicyEnforcement
+     * @var \Involix\Messenger\Model\Callback\PolicyEnforcement
      */
     protected $policyEnforcement;
 
@@ -51,7 +51,7 @@ class PolicyEnforcementEvent extends AbstractEvent
     }
 
     /**
-     * @return \Kerox\Messenger\Event\PolicyEnforcementEvent
+     * @return \Involix\Messenger\Event\PolicyEnforcementEvent
      */
     public static function create(array $payload): self
     {

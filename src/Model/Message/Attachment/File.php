@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Kerox\Messenger\Model\Message\Attachment;
+namespace Involix\Messenger\Model\Message\Attachment;
 
-use Kerox\Messenger\Model\Message\AbstractAttachment;
+use Involix\Messenger\Model\Message\AbstractAttachment;
 
 class File extends AbstractAttachment
 {
@@ -28,7 +28,7 @@ class File extends AbstractAttachment
      *
      * @param string $type
      *
-     * @throws \Kerox\Messenger\Exception\MessengerException
+     * @throws \Involix\Messenger\Exception\MessengerException
      */
     public function __construct(string $url, ?bool $reusable = null, $type = AbstractAttachment::TYPE_FILE)
     {
@@ -45,9 +45,9 @@ class File extends AbstractAttachment
     }
 
     /**
-     * @throws \Kerox\Messenger\Exception\MessengerException
+     * @throws \Involix\Messenger\Exception\MessengerException
      *
-     * @return \Kerox\Messenger\Model\Message\Attachment\File
+     * @return \Involix\Messenger\Model\Message\Attachment\File
      */
     public static function create(string $url, ?bool $reusable = null): self
     {

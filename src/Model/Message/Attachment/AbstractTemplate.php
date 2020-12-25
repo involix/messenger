@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Kerox\Messenger\Model\Message\Attachment;
+namespace Involix\Messenger\Model\Message\Attachment;
 
-use Kerox\Messenger\Model\Message\AbstractAttachment;
+use Involix\Messenger\Model\Message\AbstractAttachment;
 
 abstract class AbstractTemplate extends AbstractAttachment
 {

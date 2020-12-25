@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Kerox\Messenger\Model\Message\Attachment\Template\Element;
+namespace Involix\Messenger\Model\Message\Attachment\Template\Element;
 
-use Kerox\Messenger\Helper\ValidatorTrait;
-use Kerox\Messenger\Model\Common\Button\AbstractButton;
+use Involix\Messenger\Helper\ValidatorTrait;
+use Involix\Messenger\Model\Common\Button\AbstractButton;
 
 class OpenGraphElement implements \JsonSerializable
 {
@@ -17,14 +17,14 @@ class OpenGraphElement implements \JsonSerializable
     protected $url;
 
     /**
-     * @var \Kerox\Messenger\Model\Common\Button\AbstractButton[]
+     * @var \Involix\Messenger\Model\Common\Button\AbstractButton[]
      */
     protected $buttons = [];
 
     /**
      * OpenGraphElement constructor.
      *
-     * @throws \Kerox\Messenger\Exception\MessengerException
+     * @throws \Involix\Messenger\Exception\MessengerException
      */
     public function __construct(string $url)
     {
@@ -34,9 +34,9 @@ class OpenGraphElement implements \JsonSerializable
     }
 
     /**
-     * @throws \Kerox\Messenger\Exception\MessengerException
+     * @throws \Involix\Messenger\Exception\MessengerException
      *
-     * @return \Kerox\Messenger\Model\Message\Attachment\Template\Element\OpenGraphElement
+     * @return \Involix\Messenger\Model\Message\Attachment\Template\Element\OpenGraphElement
      */
     public static function create(string $url): self
     {
@@ -44,11 +44,11 @@ class OpenGraphElement implements \JsonSerializable
     }
 
     /**
-     * @param \Kerox\Messenger\Model\Common\Button\AbstractButton[] $buttons
+     * @param \Involix\Messenger\Model\Common\Button\AbstractButton[] $buttons
      *
-     * @throws \Kerox\Messenger\Exception\MessengerException
+     * @throws \Involix\Messenger\Exception\MessengerException
      *
-     * @return \Kerox\Messenger\Model\Message\Attachment\Template\Element\OpenGraphElement
+     * @return \Involix\Messenger\Model\Message\Attachment\Template\Element\OpenGraphElement
      */
     public function setButtons(array $buttons): self
     {

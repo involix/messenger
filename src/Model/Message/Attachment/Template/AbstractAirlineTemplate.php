@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Kerox\Messenger\Model\Message\Attachment\Template;
+namespace Involix\Messenger\Model\Message\Attachment\Template;
 
-use Kerox\Messenger\Helper\ValidatorTrait;
-use Kerox\Messenger\Model\Message\Attachment\AbstractTemplate;
+use Involix\Messenger\Helper\ValidatorTrait;
+use Involix\Messenger\Model\Message\Attachment\AbstractTemplate;
 
 abstract class AbstractAirlineTemplate extends AbstractTemplate
 {
@@ -24,7 +24,7 @@ abstract class AbstractAirlineTemplate extends AbstractTemplate
     /**
      * AbstractAirline constructor.
      *
-     * @throws \Kerox\Messenger\Exception\MessengerException
+     * @throws \Involix\Messenger\Exception\MessengerException
      */
     public function __construct(string $locale)
     {
@@ -36,9 +36,9 @@ abstract class AbstractAirlineTemplate extends AbstractTemplate
     }
 
     /**
-     *@throws \Kerox\Messenger\Exception\MessengerException
+     *@throws \Involix\Messenger\Exception\MessengerException
      *
-     * @return \Kerox\Messenger\Model\Message\Attachment\Template\AbstractAirlineTemplate
+     * @return \Involix\Messenger\Model\Message\Attachment\Template\AbstractAirlineTemplate
      */
     public function setThemeColor(string $themeColor): self
     {

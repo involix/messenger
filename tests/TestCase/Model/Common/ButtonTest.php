@@ -2,20 +2,20 @@
 
 declare(strict_types=1);
 
-namespace Kerox\Messenger\Tests\TestCase\Model\Common;
+namespace Involix\Messenger\Tests\TestCase\Model\Common;
 
-use Kerox\Messenger\Model\Common\Button\AccountLink;
-use Kerox\Messenger\Model\Common\Button\AccountUnlink;
-use Kerox\Messenger\Model\Common\Button\Nested;
-use Kerox\Messenger\Model\Common\Button\Payment;
-use Kerox\Messenger\Model\Common\Button\Payment\PaymentSummary;
-use Kerox\Messenger\Model\Common\Button\Payment\PriceList;
-use Kerox\Messenger\Model\Common\Button\PhoneNumber;
-use Kerox\Messenger\Model\Common\Button\Postback;
-use Kerox\Messenger\Model\Common\Button\Share;
-use Kerox\Messenger\Model\Common\Button\WebUrl;
-use Kerox\Messenger\Model\Message\Attachment\Template\Element\GenericElement;
-use Kerox\Messenger\Model\Message\Attachment\Template\GenericTemplate;
+use Involix\Messenger\Model\Common\Button\AccountLink;
+use Involix\Messenger\Model\Common\Button\AccountUnlink;
+use Involix\Messenger\Model\Common\Button\Nested;
+use Involix\Messenger\Model\Common\Button\Payment;
+use Involix\Messenger\Model\Common\Button\Payment\PaymentSummary;
+use Involix\Messenger\Model\Common\Button\Payment\PriceList;
+use Involix\Messenger\Model\Common\Button\PhoneNumber;
+use Involix\Messenger\Model\Common\Button\Postback;
+use Involix\Messenger\Model\Common\Button\Share;
+use Involix\Messenger\Model\Common\Button\WebUrl;
+use Involix\Messenger\Model\Message\Attachment\Template\Element\GenericElement;
+use Involix\Messenger\Model\Message\Attachment\Template\GenericTemplate;
 use PHPUnit\Framework\TestCase;
 
 class ButtonTest extends TestCase

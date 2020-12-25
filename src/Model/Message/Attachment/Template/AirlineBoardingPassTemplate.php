@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Kerox\Messenger\Model\Message\Attachment\Template;
+namespace Involix\Messenger\Model\Message\Attachment\Template;
 
-use Kerox\Messenger\Model\Message\Attachment\AbstractTemplate;
+use Involix\Messenger\Model\Message\Attachment\AbstractTemplate;
 
 class AirlineBoardingPassTemplate extends AbstractAirlineTemplate
 {
@@ -14,16 +14,16 @@ class AirlineBoardingPassTemplate extends AbstractAirlineTemplate
     protected $introMessage;
 
     /**
-     * @var \Kerox\Messenger\Model\Message\Attachment\Template\Airline\BoardingPass[]
+     * @var \Involix\Messenger\Model\Message\Attachment\Template\Airline\BoardingPass[]
      */
     protected $boardingPass;
 
     /**
      * AirlineBoardingPass constructor.
      *
-     * @param \Kerox\Messenger\Model\Message\Attachment\Template\Airline\BoardingPass[] $boardingPass
+     * @param \Involix\Messenger\Model\Message\Attachment\Template\Airline\BoardingPass[] $boardingPass
      *
-     * @throws \Kerox\Messenger\Exception\MessengerException
+     * @throws \Involix\Messenger\Exception\MessengerException
      */
     public function __construct(string $introMessage, string $locale, array $boardingPass)
     {
@@ -34,9 +34,9 @@ class AirlineBoardingPassTemplate extends AbstractAirlineTemplate
     }
 
     /**
-     *@throws \Kerox\Messenger\Exception\MessengerException
+     *@throws \Involix\Messenger\Exception\MessengerException
      *
-     *@return \Kerox\Messenger\Model\Message\Attachment\Template\AirlineBoardingPassTemplate
+     *@return \Involix\Messenger\Model\Message\Attachment\Template\AirlineBoardingPassTemplate
      */
     public static function create(string $introMessage, string $locale, array $boardingPass): self
     {

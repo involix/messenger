@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Kerox\Messenger\Model\Message;
+namespace Involix\Messenger\Model\Message;
 
-use Kerox\Messenger\Helper\UtilityTrait;
-use Kerox\Messenger\Helper\ValidatorTrait;
+use Involix\Messenger\Helper\UtilityTrait;
+use Involix\Messenger\Helper\ValidatorTrait;
 
 abstract class AbstractAttachment implements \JsonSerializable
 {

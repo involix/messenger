@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Kerox\Messenger\Model\Common\Button;
+namespace Involix\Messenger\Model\Common\Button;
 
-use Kerox\Messenger\Helper\UtilityTrait;
-use Kerox\Messenger\Model\Message\Attachment\Template\GenericTemplate;
+use Involix\Messenger\Helper\UtilityTrait;
+use Involix\Messenger\Model\Message\Attachment\Template\GenericTemplate;
 
 /**
  * @deprecated Since version 3.2.0 and will be removed in version 4.0.0.
@@ -15,7 +15,7 @@ class Share extends AbstractButton
     use UtilityTrait;
 
     /**
-     * @var \Kerox\Messenger\Model\Message\Attachment\Template\GenericTemplate|null
+     * @var \Involix\Messenger\Model\Message\Attachment\Template\GenericTemplate|null
      */
     protected $content;
 
@@ -30,7 +30,7 @@ class Share extends AbstractButton
     }
 
     /**
-     * @return \Kerox\Messenger\Model\Common\Button\Share
+     * @return \Involix\Messenger\Model\Common\Button\Share
      */
     public static function create(?GenericTemplate $content = null): self
     {

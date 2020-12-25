@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Kerox\Messenger\Model\Callback;
+namespace Involix\Messenger\Model\Callback;
 
 class Read
 {
@@ -25,7 +25,7 @@ class Read
     }
 
     /**
-     * @return \Kerox\Messenger\Model\Callback\Read
+     * @return \Involix\Messenger\Model\Callback\Read
      */
     public static function create(array $callbackData): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Kerox\Messenger\Model\Common\Button;
+namespace Involix\Messenger\Model\Common\Button;
 
 class AccountUnlink extends AbstractButton
 {
@@ -15,7 +15,7 @@ class AccountUnlink extends AbstractButton
     }
 
     /**
-     * @return \Kerox\Messenger\Model\Common\Button\AccountUnlink
+     * @return \Involix\Messenger\Model\Common\Button\AccountUnlink
      */
     public static function create(): self
     {

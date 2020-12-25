@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Kerox\Messenger\Tests\TestCase\Model\Common;
+namespace Involix\Messenger\Tests\TestCase\Model\Common;
 
-use Kerox\Messenger\Model\Common\Address;
+use Involix\Messenger\Model\Common\Address;
 use PHPUnit\Framework\TestCase;
 
 class AddressTest extends TestCase

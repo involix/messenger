@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Kerox\Messenger\Model\Message\Attachment\Template;
+namespace Involix\Messenger\Model\Message\Attachment\Template;
 
-use Kerox\Messenger\Model\Message\Attachment\AbstractTemplate;
+use Involix\Messenger\Model\Message\Attachment\AbstractTemplate;
 
 class ButtonTemplate extends AbstractTemplate
 {
@@ -14,7 +14,7 @@ class ButtonTemplate extends AbstractTemplate
     protected $text;
 
     /**
-     * @var \Kerox\Messenger\Model\Common\Button\AbstractButton[]
+     * @var \Involix\Messenger\Model\Common\Button\AbstractButton[]
      */
     protected $buttons;
 
@@ -26,7 +26,7 @@ class ButtonTemplate extends AbstractTemplate
     /**
      * Buttons constructor.
      *
-     * @param \Kerox\Messenger\Model\Common\Button\AbstractButton[] $buttons
+     * @param \Involix\Messenger\Model\Common\Button\AbstractButton[] $buttons
      */
     public function __construct(string $text, array $buttons, bool $sharable = false)
     {
@@ -41,7 +41,7 @@ class ButtonTemplate extends AbstractTemplate
     }
 
     /**
-     * @return \Kerox\Messenger\Model\Message\Attachment\Template\ButtonTemplate
+     * @return \Involix\Messenger\Model\Message\Attachment\Template\ButtonTemplate
      */
     public static function create(string $text, array $buttons, bool $sharable = false): self
     {

@@ -11,14 +11,14 @@
     <a href="https://php.net" title="PHP Version">
         <img src="https://img.shields.io/badge/php-%3E%3D%207.3-8892BF.svg?style=for-the-badge" alt="PHP Version">
     </a>
-    <a href="https://packagist.org/packages/kerox/messenger" title="Downloads">
-        <img src="https://img.shields.io/packagist/dt/kerox/messenger.svg?style=for-the-badge" alt="Downloads">
+    <a href="https://packagist.org/packages/involix/messenger" title="Downloads">
+        <img src="https://img.shields.io/packagist/dt/involix/messenger.svg?style=for-the-badge" alt="Downloads">
     </a>
-    <a href="https://packagist.org/packages/kerox/messenger" title="Latest Stable Version">
-        <img src="https://img.shields.io/packagist/v/kerox/messenger.svg?style=for-the-badge" alt="Latest Stable Version">
+    <a href="https://packagist.org/packages/involix/messenger" title="Latest Stable Version">
+        <img src="https://img.shields.io/packagist/v/involix/messenger.svg?style=for-the-badge" alt="Latest Stable Version">
     </a>
-    <a href="https://packagist.org/packages/kerox/messenger" title="License">
-        <img src="https://img.shields.io/packagist/l/kerox/messenger.svg?style=for-the-badge" alt="License">
+    <a href="https://packagist.org/packages/involix/messenger" title="License">
+        <img src="https://img.shields.io/packagist/l/involix/messenger.svg?style=for-the-badge" alt="License">
     </a>
 </div>
 
@@ -31,7 +31,7 @@ A PHP library to interact with [Facebook Messenger Platform](https://www.messeng
 You can install Messenger using Composer:
 
 ```
-composer require kerox/messenger
+composer require involix/messenger
 ```
 
 You will then need to:
@@ -41,7 +41,7 @@ You will then need to:
 ## Basic usage
 
 ```php
-use Kerox\Messenger\Messenger;
+use Involix\Messenger\Messenger;
 
 $messenger = new Messenger($appSecret, $verifyToken, $pageToken)
 $messenger->send()->message(<USER_ID>, 'Hello world!');

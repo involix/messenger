@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Kerox\Messenger\Model\Callback;
+namespace Involix\Messenger\Model\Callback;
 
 class Postback
 {
@@ -17,14 +17,14 @@ class Postback
     protected $payload;
 
     /**
-     * @var \Kerox\Messenger\Model\Callback\Referral|null
+     * @var \Involix\Messenger\Model\Callback\Referral|null
      */
     protected $referral;
 
     /**
      * Postback constructor.
      *
-     * @param \Kerox\Messenger\Model\Callback\Referral $referral
+     * @param \Involix\Messenger\Model\Callback\Referral $referral
      */
     public function __construct(string $title, ?string $payload = null, ?Referral $referral = null)
     {
@@ -54,7 +54,7 @@ class Postback
     }
 
     /**
-     * @return \Kerox\Messenger\Model\Callback\Referral|null
+     * @return \Involix\Messenger\Model\Callback\Referral|null
      */
     public function getReferral(): ?Referral
     {
@@ -62,7 +62,7 @@ class Postback
     }
 
     /**
-     * @return \Kerox\Messenger\Model\Callback\Postback
+     * @return \Involix\Messenger\Model\Callback\Postback
      */
     public static function create(array $callbackData): self
     {

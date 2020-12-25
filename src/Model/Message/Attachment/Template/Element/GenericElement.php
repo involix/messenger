@@ -2,26 +2,26 @@
 
 declare(strict_types=1);
 
-namespace Kerox\Messenger\Model\Message\Attachment\Template\Element;
+namespace Involix\Messenger\Model\Message\Attachment\Template\Element;
 
-use Kerox\Messenger\Model\Common\Button\WebUrl;
+use Involix\Messenger\Model\Common\Button\WebUrl;
 
 class GenericElement extends AbstractElement
 {
     /**
-     * @var \Kerox\Messenger\Model\Common\Button\WebUrl
+     * @var \Involix\Messenger\Model\Common\Button\WebUrl
      */
     protected $defaultAction;
 
     /**
-     * @var \Kerox\Messenger\Model\Common\Button\AbstractButton[]|null
+     * @var \Involix\Messenger\Model\Common\Button\AbstractButton[]|null
      */
     protected $buttons = [];
 
     /**
-     * @throws \Kerox\Messenger\Exception\MessengerException
+     * @throws \Involix\Messenger\Exception\MessengerException
      *
-     * @return \Kerox\Messenger\Model\Message\Attachment\Template\Element\GenericElement
+     * @return \Involix\Messenger\Model\Message\Attachment\Template\Element\GenericElement
      */
     public static function create(string $title): self
     {
@@ -29,9 +29,9 @@ class GenericElement extends AbstractElement
     }
 
     /**
-     * @throws \Kerox\Messenger\Exception\MessengerException
+     * @throws \Involix\Messenger\Exception\MessengerException
      *
-     * @return \Kerox\Messenger\Model\Message\Attachment\Template\Element\GenericElement
+     * @return \Involix\Messenger\Model\Message\Attachment\Template\Element\GenericElement
      */
     public function setSubtitle(string $subtitle): self
     {
@@ -41,9 +41,9 @@ class GenericElement extends AbstractElement
     }
 
     /**
-     * @throws \Kerox\Messenger\Exception\MessengerException
+     * @throws \Involix\Messenger\Exception\MessengerException
      *
-     * @return \Kerox\Messenger\Model\Message\Attachment\Template\Element\GenericElement
+     * @return \Involix\Messenger\Model\Message\Attachment\Template\Element\GenericElement
      */
     public function setImageUrl(string $imageUrl): self
     {
@@ -53,7 +53,7 @@ class GenericElement extends AbstractElement
     }
 
     /**
-     * @return \Kerox\Messenger\Model\Message\Attachment\Template\Element\GenericElement
+     * @return \Involix\Messenger\Model\Message\Attachment\Template\Element\GenericElement
      */
     public function setDefaultAction(WebUrl $defaultAction): self
     {
@@ -63,11 +63,11 @@ class GenericElement extends AbstractElement
     }
 
     /**
-     * @param \Kerox\Messenger\Model\Common\Button\AbstractButton[] $buttons
+     * @param \Involix\Messenger\Model\Common\Button\AbstractButton[] $buttons
      *
-     * @throws \Kerox\Messenger\Exception\MessengerException
+     * @throws \Involix\Messenger\Exception\MessengerException
      *
-     * @return \Kerox\Messenger\Model\Message\Attachment\Template\Element\GenericElement
+     * @return \Involix\Messenger\Model\Message\Attachment\Template\Element\GenericElement
      */
     public function setButtons(array $buttons): self
     {

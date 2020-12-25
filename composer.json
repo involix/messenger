@@ -1,5 +1,5 @@
 {
-  "name": "kerox/messenger",
+  "name": "involix/messenger",
   "type": "library",
   "description": "PHP Library to interact with Facebook Messenger Platform",
   "keywords": [
@@ -9,13 +9,12 @@
     "bot messenger",
     "api"
   ],
-  "homepage": "https://github.com/ker0x/messenger",
+  "homepage": "https://github.com/involix/messenger",
   "license": "MIT",
   "authors": [
     {
-      "name": "Romain Monteil",
-      "homepage": "https://kerox.fr",
-      "email": "monteil.romain@gmail.com",
+      "name": "Involix",
+      "email": "raskopin28@gmail.com",
       "role": "Author"
     }
   ],
@@ -32,12 +31,12 @@
   },
   "autoload": {
     "psr-4": {
-      "Kerox\\Messenger\\": "src"
+      "Involix\\Messenger\\": "src"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "Kerox\\Messenger\\Tests\\": "tests"
+      "Involix\\Messenger\\Tests\\": "tests"
     }
   },
   "scripts": {

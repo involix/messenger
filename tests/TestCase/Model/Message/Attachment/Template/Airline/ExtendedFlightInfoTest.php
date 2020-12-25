@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace Kerox\Messenger\Tests\TestCase\Model\Message\Attachment\Template\Airline;
+namespace Involix\Messenger\Tests\TestCase\Model\Message\Attachment\Template\Airline;
 
-use Kerox\Messenger\Exception\MessengerException;
-use Kerox\Messenger\Model\Message\Attachment\Template\Airline\Airport;
-use Kerox\Messenger\Model\Message\Attachment\Template\Airline\ExtendedFlightInfo;
-use Kerox\Messenger\Model\Message\Attachment\Template\Airline\FlightSchedule;
+use Involix\Messenger\Exception\MessengerException;
+use Involix\Messenger\Model\Message\Attachment\Template\Airline\Airport;
+use Involix\Messenger\Model\Message\Attachment\Template\Airline\ExtendedFlightInfo;
+use Involix\Messenger\Model\Message\Attachment\Template\Airline\FlightSchedule;
 use PHPUnit\Framework\TestCase;
 
 class ExtendedFlightInfoTest extends TestCase

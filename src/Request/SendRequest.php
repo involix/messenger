@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Kerox\Messenger\Request;
+namespace Involix\Messenger\Request;
 
-use Kerox\Messenger\Model\Message;
-use Kerox\Messenger\SendInterface;
+use Involix\Messenger\Model\Message;
+use Involix\Messenger\SendInterface;
 
 class SendRequest extends AbstractRequest
 {
@@ -18,7 +18,7 @@ class SendRequest extends AbstractRequest
     protected $recipient;
 
     /**
-     * @var string|\Kerox\Messenger\Model\Message|null
+     * @var string|\Involix\Messenger\Model\Message|null
      */
     protected $message;
 
@@ -50,7 +50,7 @@ class SendRequest extends AbstractRequest
     /**
      * Request constructor.
      *
-     * @param string|\Kerox\Messenger\Model\Message $content
+     * @param string|\Involix\Messenger\Model\Message $content
      * @param string|array|null                     $recipient
      */
     public function __construct(

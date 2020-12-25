@@ -2,31 +2,31 @@
 
 declare(strict_types=1);
 
-namespace Kerox\Messenger\Helper;
+namespace Involix\Messenger\Helper;
 
-use Kerox\Messenger\Exception\InvalidArrayException;
-use Kerox\Messenger\Exception\InvalidClassException;
-use Kerox\Messenger\Exception\InvalidColorException;
-use Kerox\Messenger\Exception\InvalidCountryException;
-use Kerox\Messenger\Exception\InvalidCurrencyException;
-use Kerox\Messenger\Exception\InvalidDateTimeException;
-use Kerox\Messenger\Exception\InvalidExtensionException;
-use Kerox\Messenger\Exception\InvalidKeyException;
-use Kerox\Messenger\Exception\InvalidLocaleException;
-use Kerox\Messenger\Exception\InvalidStringException;
-use Kerox\Messenger\Exception\InvalidTypeException;
-use Kerox\Messenger\Exception\InvalidUrlException;
-use Kerox\Messenger\Exception\MessengerException;
-use Kerox\Messenger\Model\Common\Button\AbstractButton;
-use Kerox\Messenger\Model\Message;
-use Kerox\Messenger\Model\Message\AbstractAttachment;
-use Kerox\Messenger\Model\Message\Attachment\Template\GenericTemplate;
-use Kerox\Messenger\SendInterface;
+use Involix\Messenger\Exception\InvalidArrayException;
+use Involix\Messenger\Exception\InvalidClassException;
+use Involix\Messenger\Exception\InvalidColorException;
+use Involix\Messenger\Exception\InvalidCountryException;
+use Involix\Messenger\Exception\InvalidCurrencyException;
+use Involix\Messenger\Exception\InvalidDateTimeException;
+use Involix\Messenger\Exception\InvalidExtensionException;
+use Involix\Messenger\Exception\InvalidKeyException;
+use Involix\Messenger\Exception\InvalidLocaleException;
+use Involix\Messenger\Exception\InvalidStringException;
+use Involix\Messenger\Exception\InvalidTypeException;
+use Involix\Messenger\Exception\InvalidUrlException;
+use Involix\Messenger\Exception\MessengerException;
+use Involix\Messenger\Model\Common\Button\AbstractButton;
+use Involix\Messenger\Model\Message;
+use Involix\Messenger\Model\Message\AbstractAttachment;
+use Involix\Messenger\Model\Message\Attachment\Template\GenericTemplate;
+use Involix\Messenger\SendInterface;
 
 trait ValidatorTrait
 {
     /**
-     * @throws \Kerox\Messenger\Exception\InvalidColorException
+     * @throws \Involix\Messenger\Exception\InvalidColorException
      */
     protected function isValidColor(string $value): void
     {
@@ -36,7 +36,7 @@ trait ValidatorTrait
     }
 
     /**
-     * @throws \Kerox\Messenger\Exception\InvalidStringException
+     * @throws \Involix\Messenger\Exception\InvalidStringException
      */
     protected function isValidString(string $value, int $length = 20): void
     {
@@ -46,7 +46,7 @@ trait ValidatorTrait
     }
 
     /**
-     * @throws \Kerox\Messenger\Exception\InvalidUrlException
+     * @throws \Involix\Messenger\Exception\InvalidUrlException
      */
     protected function isValidUrl(string $value): void
     {
@@ -59,7 +59,7 @@ trait ValidatorTrait
     }
 
     /**
-     * @throws \Kerox\Messenger\Exception\InvalidLocaleException
+     * @throws \Involix\Messenger\Exception\InvalidLocaleException
      */
     protected function isValidLocale(string $value): void
     {
@@ -69,7 +69,7 @@ trait ValidatorTrait
     }
 
     /**
-     * @throws \Kerox\Messenger\Exception\InvalidCountryException
+     * @throws \Involix\Messenger\Exception\InvalidCountryException
      */
     protected function isValidCountry(string $value): void
     {
@@ -79,7 +79,7 @@ trait ValidatorTrait
     }
 
     /**
-     * @throws \Kerox\Messenger\Exception\InvalidDateTimeException
+     * @throws \Involix\Messenger\Exception\InvalidDateTimeException
      */
     protected function isValidDateTime(string $value): void
     {
@@ -91,7 +91,7 @@ trait ValidatorTrait
     /**
      * @param int $minSize
      *
-     * @throws \Kerox\Messenger\Exception\InvalidArrayException
+     * @throws \Involix\Messenger\Exception\InvalidArrayException
      */
     protected function isValidArray(array $array, int $maxSize, ?int $minSize = null): void
     {
@@ -105,7 +105,7 @@ trait ValidatorTrait
     }
 
     /**
-     * @throws \Kerox\Messenger\Exception\InvalidCurrencyException
+     * @throws \Involix\Messenger\Exception\InvalidCurrencyException
      */
     protected function isValidCurrency(string $value): void
     {
@@ -118,7 +118,7 @@ trait ValidatorTrait
     }
 
     /**
-     * @throws \Kerox\Messenger\Exception\InvalidExtensionException
+     * @throws \Involix\Messenger\Exception\InvalidExtensionException
      */
     protected function isValidExtension(string $filename, array $allowedExtension): void
     {
@@ -129,13 +129,13 @@ trait ValidatorTrait
     }
 
     /**
-     * @param \Kerox\Messenger\Model\Common\Button\AbstractButton[] $buttons
+     * @param \Involix\Messenger\Model\Common\Button\AbstractButton[] $buttons
      *
-     * @throws \Kerox\Messenger\Exception\InvalidClassException
+     * @throws \Involix\Messenger\Exception\InvalidClassException
      */
     protected function isValidButtons(array $buttons, array $allowedButtonsType): void
     {
-        /** @var \Kerox\Messenger\Model\Common\Button\AbstractButton $button */
+        /** @var \Involix\Messenger\Model\Common\Button\AbstractButton $button */
         foreach ($buttons as $button) {
             if (!$button instanceof AbstractButton) {
                 throw new InvalidClassException(sprintf('Array can only contain instance of "%s".', AbstractButton::class));
@@ -166,7 +166,7 @@ trait ValidatorTrait
     }
 
     /**
-     * @throws \Kerox\Messenger\Exception\InvalidKeyException
+     * @throws \Involix\Messenger\Exception\InvalidKeyException
      */
     protected function isValidSenderAction(string $action): void
     {
@@ -177,7 +177,7 @@ trait ValidatorTrait
     }
 
     /**
-     * @throws \Kerox\Messenger\Exception\InvalidTypeException
+     * @throws \Involix\Messenger\Exception\InvalidTypeException
      */
     protected function isValidNotificationType(string $notificationType): void
     {
@@ -190,8 +190,8 @@ trait ValidatorTrait
     /**
      * @param mixed $message
      *
-     * @throws \Kerox\Messenger\Exception\InvalidClassException
-     * @throws \Kerox\Messenger\Exception\InvalidKeyException
+     * @throws \Involix\Messenger\Exception\InvalidClassException
+     * @throws \Involix\Messenger\Exception\InvalidKeyException
      */
     protected function isValidTag(string $tag, $message = null): void
     {

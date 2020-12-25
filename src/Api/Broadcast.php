@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace Kerox\Messenger\Api;
+namespace Involix\Messenger\Api;
 
-use Kerox\Messenger\Exception\InvalidOptionException;
-use Kerox\Messenger\Helper\ValidatorTrait;
-use Kerox\Messenger\Request\BroadcastRequest;
-use Kerox\Messenger\Response\BroadcastResponse;
-use Kerox\Messenger\SendInterface;
+use Involix\Messenger\Exception\InvalidOptionException;
+use Involix\Messenger\Helper\ValidatorTrait;
+use Involix\Messenger\Request\BroadcastRequest;
+use Involix\Messenger\Response\BroadcastResponse;
+use Involix\Messenger\SendInterface;
 
 /**
  * @deprecated Since version 3.2.0 and will be removed in version 4.0.0.
@@ -18,7 +18,7 @@ class Broadcast extends AbstractApi implements SendInterface
     use ValidatorTrait;
 
     /**
-     * @param string|\Kerox\Messenger\Model\Message $message
+     * @param string|\Involix\Messenger\Model\Message $message
      *
      * @throws \Exception
      */
@@ -33,7 +33,7 @@ class Broadcast extends AbstractApi implements SendInterface
     }
 
     /**
-     * @throws \Kerox\Messenger\Exception\MessengerException
+     * @throws \Involix\Messenger\Exception\MessengerException
      */
     public function send(string $messageCreativeId, array $options = []): BroadcastResponse
     {
@@ -46,7 +46,7 @@ class Broadcast extends AbstractApi implements SendInterface
     }
 
     /**
-     * @throws \Kerox\Messenger\Exception\MessengerException
+     * @throws \Involix\Messenger\Exception\MessengerException
      */
     private function isValidOptions(array $options): void
     {

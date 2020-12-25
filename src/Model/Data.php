@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Kerox\Messenger\Model;
+namespace Involix\Messenger\Model;
 
-use Kerox\Messenger\Model\Data\Value;
+use Involix\Messenger\Model\Data\Value;
 
 class Data
 {
@@ -80,7 +80,7 @@ class Data
     }
 
     /**
-     * @return \Kerox\Messenger\Model\Data\Value[]
+     * @return \Involix\Messenger\Model\Data\Value[]
      */
     public function getValues(): array
     {
@@ -88,7 +88,7 @@ class Data
     }
 
     /**
-     * @return \Kerox\Messenger\Model\Data
+     * @return \Involix\Messenger\Model\Data
      */
     public function setValues(array $data): self
     {
@@ -127,7 +127,7 @@ class Data
     }
 
     /**
-     * @return \Kerox\Messenger\Model\Data
+     * @return \Involix\Messenger\Model\Data
      */
     public static function create(array $data): self
     {

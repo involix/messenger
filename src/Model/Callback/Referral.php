@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Kerox\Messenger\Model\Callback;
+namespace Involix\Messenger\Model\Callback;
 
 class Referral
 {
@@ -47,7 +47,7 @@ class Referral
     }
 
     /**
-     * @return \Kerox\Messenger\Model\Callback\Referral
+     * @return \Involix\Messenger\Model\Callback\Referral
      */
     public static function create(array $callbackData): self
     {

@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace Kerox\Messenger\Model;
+namespace Involix\Messenger\Model;
 
-use Kerox\Messenger\Helper\ValidatorTrait;
-use Kerox\Messenger\Model\ProfileSettings\HomeUrl;
-use Kerox\Messenger\Model\ProfileSettings\PaymentSettings;
-use Kerox\Messenger\Model\ProfileSettings\TargetAudience;
+use Involix\Messenger\Helper\ValidatorTrait;
+use Involix\Messenger\Model\ProfileSettings\HomeUrl;
+use Involix\Messenger\Model\ProfileSettings\PaymentSettings;
+use Involix\Messenger\Model\ProfileSettings\TargetAudience;
 
 class ProfileSettings implements \JsonSerializable
 {
@@ -19,17 +19,17 @@ class ProfileSettings implements \JsonSerializable
     protected $startButton;
 
     /**
-     * @var \Kerox\Messenger\Model\ProfileSettings\Greeting[]|null
+     * @var \Involix\Messenger\Model\ProfileSettings\Greeting[]|null
      */
     protected $greetings;
 
     /**
-     * @var \Kerox\Messenger\Model\ProfileSettings\IceBreakers[]|null
+     * @var \Involix\Messenger\Model\ProfileSettings\IceBreakers[]|null
      */
     protected $iceBreakers;
 
     /**
-     * @var \Kerox\Messenger\Model\ProfileSettings\PersistentMenu[]|null
+     * @var \Involix\Messenger\Model\ProfileSettings\PersistentMenu[]|null
      */
     protected $persistentMenus;
 
@@ -44,22 +44,22 @@ class ProfileSettings implements \JsonSerializable
     protected $accountLinkingUrl;
 
     /**
-     * @var \Kerox\Messenger\Model\ProfileSettings\PaymentSettings|null
+     * @var \Involix\Messenger\Model\ProfileSettings\PaymentSettings|null
      */
     protected $paymentSettings;
 
     /**
-     * @var \Kerox\Messenger\Model\ProfileSettings\HomeUrl|null
+     * @var \Involix\Messenger\Model\ProfileSettings\HomeUrl|null
      */
     protected $homeUrl;
 
     /**
-     * @var \Kerox\Messenger\Model\ProfileSettings\TargetAudience|null
+     * @var \Involix\Messenger\Model\ProfileSettings\TargetAudience|null
      */
     protected $targetAudience;
 
     /**
-     * @return \Kerox\Messenger\Model\ProfileSettings
+     * @return \Involix\Messenger\Model\ProfileSettings
      */
     public static function create(): self
     {
@@ -67,9 +67,9 @@ class ProfileSettings implements \JsonSerializable
     }
 
     /**
-     * @param \Kerox\Messenger\Model\ProfileSettings\PersistentMenu[] $persistentMenus
+     * @param \Involix\Messenger\Model\ProfileSettings\PersistentMenu[] $persistentMenus
      *
-     * @return \Kerox\Messenger\Model\ProfileSettings
+     * @return \Involix\Messenger\Model\ProfileSettings
      */
     public function addPersistentMenus(array $persistentMenus): self
     {
@@ -81,7 +81,7 @@ class ProfileSettings implements \JsonSerializable
     /**
      * @throws \Exception
      *
-     * @return \Kerox\Messenger\Model\ProfileSettings
+     * @return \Involix\Messenger\Model\ProfileSettings
      */
     public function addStartButton(string $payload): self
     {
@@ -95,9 +95,9 @@ class ProfileSettings implements \JsonSerializable
     }
 
     /**
-     * @param \Kerox\Messenger\Model\ProfileSettings\Greeting[] $greetings
+     * @param \Involix\Messenger\Model\ProfileSettings\Greeting[] $greetings
      *
-     * @return \Kerox\Messenger\Model\ProfileSettings
+     * @return \Involix\Messenger\Model\ProfileSettings
      */
     public function addGreetings(array $greetings): self
     {
@@ -107,9 +107,9 @@ class ProfileSettings implements \JsonSerializable
     }
 
     /**
-     * @param \Kerox\Messenger\Model\ProfileSettings\IceBreakers[] $iceBreakers
+     * @param \Involix\Messenger\Model\ProfileSettings\IceBreakers[] $iceBreakers
      *
-     * @return \Kerox\Messenger\Model\ProfileSettings
+     * @return \Involix\Messenger\Model\ProfileSettings
      */
     public function addIceBreakers(array $iceBreakers): self
     {
@@ -121,7 +121,7 @@ class ProfileSettings implements \JsonSerializable
     /**
      * @throws \Exception
      *
-     * @return \Kerox\Messenger\Model\ProfileSettings
+     * @return \Involix\Messenger\Model\ProfileSettings
      */
     public function addWhitelistedDomains(array $whitelistedDomains): self
     {
@@ -135,7 +135,7 @@ class ProfileSettings implements \JsonSerializable
     /**
      * @throws \Exception
      *
-     * @return \Kerox\Messenger\Model\ProfileSettings
+     * @return \Involix\Messenger\Model\ProfileSettings
      */
     public function addAccountLinkingUrl(string $accountLinkingUrl): self
     {
@@ -149,7 +149,7 @@ class ProfileSettings implements \JsonSerializable
     /**
      * @deprecated Since version 3.3.0 and will be removed in version 4.0.0.
      *
-     * @return \Kerox\Messenger\Model\ProfileSettings
+     * @return \Involix\Messenger\Model\ProfileSettings
      */
     public function addPaymentSettings(PaymentSettings $paymentSettings): self
     {
@@ -159,7 +159,7 @@ class ProfileSettings implements \JsonSerializable
     }
 
     /**
-     * @return \Kerox\Messenger\Model\ProfileSettings
+     * @return \Involix\Messenger\Model\ProfileSettings
      */
     public function addHomeUrl(HomeUrl $homeUrl): self
     {
@@ -171,7 +171,7 @@ class ProfileSettings implements \JsonSerializable
     /**
      * @deprecated Since version 3.3.0 and will be removed in version 4.0.0.
      *
-     * @return \Kerox\Messenger\Model\ProfileSettings
+     * @return \Involix\Messenger\Model\ProfileSettings
      */
     public function addTargetAudience(TargetAudience $targetAudience): self
     {

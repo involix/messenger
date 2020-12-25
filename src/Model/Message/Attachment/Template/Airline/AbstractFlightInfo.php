@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Kerox\Messenger\Model\Message\Attachment\Template\Airline;
+namespace Involix\Messenger\Model\Message\Attachment\Template\Airline;
 
 abstract class AbstractFlightInfo implements \JsonSerializable
 {
@@ -29,9 +29,9 @@ abstract class AbstractFlightInfo implements \JsonSerializable
     /**
      * AbstractFlightInfo constructor.
      *
-     * @param \Kerox\Messenger\Model\Message\Attachment\Template\Airline\Airport        $departureAirport
-     * @param \Kerox\Messenger\Model\Message\Attachment\Template\Airline\Airport        $arrivalAirport
-     * @param \Kerox\Messenger\Model\Message\Attachment\Template\Airline\FlightSchedule $flightSchedule
+     * @param \Involix\Messenger\Model\Message\Attachment\Template\Airline\Airport        $departureAirport
+     * @param \Involix\Messenger\Model\Message\Attachment\Template\Airline\Airport        $arrivalAirport
+     * @param \Involix\Messenger\Model\Message\Attachment\Template\Airline\FlightSchedule $flightSchedule
      */
     public function __construct(
         string $flightNumber,

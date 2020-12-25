@@ -2,20 +2,20 @@
 
 declare(strict_types=1);
 
-namespace Kerox\Messenger\Tests\TestCase\Api;
+namespace Involix\Messenger\Tests\TestCase\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\Handler\MockHandler;
 use GuzzleHttp\HandlerStack;
 use GuzzleHttp\Psr7\Response;
-use Kerox\Messenger\Api\Thread;
-use Kerox\Messenger\Model\ThreadControl;
+use Involix\Messenger\Api\Thread;
+use Involix\Messenger\Model\ThreadControl;
 use PHPUnit\Framework\TestCase;
 
 class ThreadTest extends TestCase
 {
     /**
-     * @var \Kerox\Messenger\Api\Thread
+     * @var \Involix\Messenger\Api\Thread
      */
     protected $threadApi;
 

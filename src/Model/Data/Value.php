@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Kerox\Messenger\Model\Data;
+namespace Involix\Messenger\Model\Data;
 
 class Value
 {
@@ -30,7 +30,7 @@ class Value
     /**
      * @param int|array $value
      *
-     * @return \Kerox\Messenger\Model\Data\Value
+     * @return \Involix\Messenger\Model\Data\Value
      */
     public static function create($value, string $endTime): self
     {

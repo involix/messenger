@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Kerox\Messenger\Model\Common\Button;
+namespace Involix\Messenger\Model\Common\Button;
 
 /**
  * @deprecated Since version 3.2.0 and will be removed in version 4.0.0.
@@ -15,16 +15,16 @@ class Nested extends AbstractButton
     protected $title;
 
     /**
-     * @var \Kerox\Messenger\Model\Common\Button\AbstractButton[]
+     * @var \Involix\Messenger\Model\Common\Button\AbstractButton[]
      */
     protected $buttons;
 
     /**
      * Nested constructor.
      *
-     * @param \Kerox\Messenger\Model\Common\Button\AbstractButton[] $buttons
+     * @param \Involix\Messenger\Model\Common\Button\AbstractButton[] $buttons
      *
-     * @throws \Kerox\Messenger\Exception\MessengerException
+     * @throws \Involix\Messenger\Exception\MessengerException
      */
     public function __construct(string $title, array $buttons)
     {
@@ -39,9 +39,9 @@ class Nested extends AbstractButton
     }
 
     /**
-     * @throws \Kerox\Messenger\Exception\MessengerException
+     * @throws \Involix\Messenger\Exception\MessengerException
      *
-     * @return \Kerox\Messenger\Model\Common\Button\Nested
+     * @return \Involix\Messenger\Model\Common\Button\Nested
      */
     public static function create(string $title, array $buttons): self
     {
@@ -49,11 +49,11 @@ class Nested extends AbstractButton
     }
 
     /**
-     * @param \Kerox\Messenger\Model\Common\Button\AbstractButton $button
+     * @param \Involix\Messenger\Model\Common\Button\AbstractButton $button
      *
-     * @throws \Kerox\Messenger\Exception\MessengerException
+     * @throws \Involix\Messenger\Exception\MessengerException
      *
-     * @return \Kerox\Messenger\Model\Common\Button\Nested
+     * @return \Involix\Messenger\Model\Common\Button\Nested
      */
     public function addButton(AbstractButton $button): self
     {

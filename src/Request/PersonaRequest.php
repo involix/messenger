@@ -2,14 +2,14 @@
 
 declare(strict_types=1);
 
-namespace Kerox\Messenger\Request;
+namespace Involix\Messenger\Request;
 
-use Kerox\Messenger\Model\PersonaSettings;
+use Involix\Messenger\Model\PersonaSettings;
 
 class PersonaRequest extends AbstractRequest
 {
     /**
-     * @var \Kerox\Messenger\Model\PersonaSettings|null
+     * @var \Involix\Messenger\Model\PersonaSettings|null
      */
     protected $personaSettings;
 
@@ -33,7 +33,7 @@ class PersonaRequest extends AbstractRequest
     }
 
     /**
-     * @return \Kerox\Messenger\Model\PersonaSettings|mixed|null
+     * @return \Involix\Messenger\Model\PersonaSettings|mixed|null
      */
     protected function buildBody()
     {

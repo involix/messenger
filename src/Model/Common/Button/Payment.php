@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Kerox\Messenger\Model\Common\Button;
+namespace Involix\Messenger\Model\Common\Button;
 
-use Kerox\Messenger\Model\Common\Button\Payment\PaymentSummary;
+use Involix\Messenger\Model\Common\Button\Payment\PaymentSummary;
 
 class Payment extends AbstractButton
 {
@@ -19,14 +19,14 @@ class Payment extends AbstractButton
     protected $payload;
 
     /**
-     * @var \Kerox\Messenger\Model\Common\Button\Payment\PaymentSummary
+     * @var \Involix\Messenger\Model\Common\Button\Payment\PaymentSummary
      */
     protected $paymentSummary;
 
     /**
      * Payment constructor.
      *
-     * @throws \Kerox\Messenger\Exception\MessengerException
+     * @throws \Involix\Messenger\Exception\MessengerException
      */
     public function __construct(string $payload, PaymentSummary $paymentSummary)
     {
@@ -40,9 +40,9 @@ class Payment extends AbstractButton
     }
 
     /**
-     * @throws \Kerox\Messenger\Exception\MessengerException
+     * @throws \Involix\Messenger\Exception\MessengerException
      *
-     * @return \Kerox\Messenger\Model\Common\Button\Payment
+     * @return \Involix\Messenger\Model\Common\Button\Payment
      */
     public static function create(string $payload, PaymentSummary $paymentSummary): self
     {

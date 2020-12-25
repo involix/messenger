@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Kerox\Messenger\Model\Message\Attachment\Template;
+namespace Involix\Messenger\Model\Message\Attachment\Template;
 
-use Kerox\Messenger\Model\Message\Attachment\AbstractTemplate;
+use Involix\Messenger\Model\Message\Attachment\AbstractTemplate;
 
 class AirlineCheckInTemplate extends AbstractAirlineTemplate
 {
@@ -19,7 +19,7 @@ class AirlineCheckInTemplate extends AbstractAirlineTemplate
     protected $pnrNumber;
 
     /**
-     * @var \Kerox\Messenger\Model\Message\Attachment\Template\Airline\FlightInfo[]
+     * @var \Involix\Messenger\Model\Message\Attachment\Template\Airline\FlightInfo[]
      */
     protected $flightInfo;
 
@@ -31,7 +31,7 @@ class AirlineCheckInTemplate extends AbstractAirlineTemplate
     /**
      * AirlineCheckIn constructor.
      *
-     * @throws \Kerox\Messenger\Exception\MessengerException
+     * @throws \Involix\Messenger\Exception\MessengerException
      */
     public function __construct(
         string $introMessage,
@@ -49,9 +49,9 @@ class AirlineCheckInTemplate extends AbstractAirlineTemplate
     }
 
     /**
-     *@throws \Kerox\Messenger\Exception\MessengerException
+     *@throws \Involix\Messenger\Exception\MessengerException
      *
-     *@return \Kerox\Messenger\Model\Message\Attachment\Template\AirlineCheckInTemplate
+     *@return \Involix\Messenger\Model\Message\Attachment\Template\AirlineCheckInTemplate
      */
     public static function create(
         string $introMessage,

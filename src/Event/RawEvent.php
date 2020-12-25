@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Kerox\Messenger\Event;
+namespace Involix\Messenger\Event;
 
 class RawEvent extends AbstractEvent
 {
@@ -34,7 +34,7 @@ class RawEvent extends AbstractEvent
     }
 
     /**
-     * @return \Kerox\Messenger\Event\RawEvent
+     * @return \Involix\Messenger\Event\RawEvent
      */
     public static function create(array $payload): self
     {

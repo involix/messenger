@@ -2,14 +2,14 @@
 
 declare(strict_types=1);
 
-namespace Kerox\Messenger\Model\Callback\Payment;
+namespace Involix\Messenger\Model\Callback\Payment;
 
-use Kerox\Messenger\Model\Common\Address;
+use Involix\Messenger\Model\Common\Address;
 
 class RequestedUserInfo
 {
     /**
-     * @var \Kerox\Messenger\Model\Common\Address
+     * @var \Involix\Messenger\Model\Common\Address
      */
     protected $shippingAddress;
 
@@ -64,7 +64,7 @@ class RequestedUserInfo
     }
 
     /**
-     * @return \Kerox\Messenger\Model\Callback\Payment\RequestedUserInfo
+     * @return \Involix\Messenger\Model\Callback\Payment\RequestedUserInfo
      */
     public static function create(array $callbackData): self
     {

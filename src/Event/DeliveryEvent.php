@@ -2,16 +2,16 @@
 
 declare(strict_types=1);
 
-namespace Kerox\Messenger\Event;
+namespace Involix\Messenger\Event;
 
-use Kerox\Messenger\Model\Callback\Delivery;
+use Involix\Messenger\Model\Callback\Delivery;
 
 class DeliveryEvent extends AbstractEvent
 {
     public const NAME = 'delivery';
 
     /**
-     * @var \Kerox\Messenger\Model\Callback\Delivery
+     * @var \Involix\Messenger\Model\Callback\Delivery
      */
     protected $delivery;
 
@@ -36,7 +36,7 @@ class DeliveryEvent extends AbstractEvent
     }
 
     /**
-     * @return \Kerox\Messenger\Event\DeliveryEvent
+     * @return \Involix\Messenger\Event\DeliveryEvent
      */
     public static function create(array $payload): self
     {

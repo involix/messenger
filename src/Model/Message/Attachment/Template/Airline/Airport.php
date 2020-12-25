@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Kerox\Messenger\Model\Message\Attachment\Template\Airline;
+namespace Involix\Messenger\Model\Message\Attachment\Template\Airline;
 
 class Airport implements \JsonSerializable
 {
@@ -36,7 +36,7 @@ class Airport implements \JsonSerializable
     }
 
     /**
-     * @return \Kerox\Messenger\Model\Message\Attachment\Template\Airline\Airport
+     * @return \Involix\Messenger\Model\Message\Attachment\Template\Airline\Airport
      */
     public static function create(string $airportCode, string $city): self
     {

@@ -2,17 +2,17 @@
 
 declare(strict_types=1);
 
-namespace Kerox\Messenger\Api;
+namespace Involix\Messenger\Api;
 
-use Kerox\Messenger\Exception\InvalidKeyException;
-use Kerox\Messenger\InsightsInterface;
-use Kerox\Messenger\Request\InsightsRequest;
-use Kerox\Messenger\Response\InsightsResponse;
+use Involix\Messenger\Exception\InvalidKeyException;
+use Involix\Messenger\InsightsInterface;
+use Involix\Messenger\Request\InsightsRequest;
+use Involix\Messenger\Response\InsightsResponse;
 
 class Insights extends AbstractApi implements InsightsInterface
 {
     /**
-     * @throws \Kerox\Messenger\Exception\MessengerException
+     * @throws \Involix\Messenger\Exception\MessengerException
      */
     public function get(array $metrics = [], ?int $since = null, ?int $until = null): InsightsResponse
     {
@@ -25,7 +25,7 @@ class Insights extends AbstractApi implements InsightsInterface
     }
 
     /**
-     * @throws \Kerox\Messenger\Exception\MessengerException
+     * @throws \Involix\Messenger\Exception\MessengerException
      */
     private function isValidMetrics(array $metrics): array
     {

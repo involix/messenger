@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Kerox\Messenger\Model\Message\Attachment\Template;
+namespace Involix\Messenger\Model\Message\Attachment\Template;
 
-use Kerox\Messenger\Model\Common\Address;
-use Kerox\Messenger\Model\Message\Attachment\AbstractTemplate;
-use Kerox\Messenger\Model\Message\Attachment\Template\Receipt\Summary;
+use Involix\Messenger\Model\Common\Address;
+use Involix\Messenger\Model\Message\Attachment\AbstractTemplate;
+use Involix\Messenger\Model\Message\Attachment\Template\Receipt\Summary;
 
 class ReceiptTemplate extends AbstractTemplate
 {
@@ -41,31 +41,31 @@ class ReceiptTemplate extends AbstractTemplate
     protected $orderUrl;
 
     /**
-     * @var \Kerox\Messenger\Model\Message\Attachment\Template\Element\ReceiptElement[]
+     * @var \Involix\Messenger\Model\Message\Attachment\Template\Element\ReceiptElement[]
      */
     protected $elements;
 
     /**
-     * @var \Kerox\Messenger\Model\Common\Address|null
+     * @var \Involix\Messenger\Model\Common\Address|null
      */
     protected $address;
 
     /**
-     * @var \Kerox\Messenger\Model\Message\Attachment\Template\Receipt\Summary
+     * @var \Involix\Messenger\Model\Message\Attachment\Template\Receipt\Summary
      */
     protected $summary;
 
     /**
-     * @var \Kerox\Messenger\Model\Message\Attachment\Template\Receipt\Adjustment[]|null
+     * @var \Involix\Messenger\Model\Message\Attachment\Template\Receipt\Adjustment[]|null
      */
     protected $adjustments;
 
     /**
      * Receipt constructor.
      *
-     * @param \Kerox\Messenger\Model\Message\Attachment\Template\Element\ReceiptElement[] $elements
+     * @param \Involix\Messenger\Model\Message\Attachment\Template\Element\ReceiptElement[] $elements
      *
-     * @throws \Kerox\Messenger\Exception\MessengerException
+     * @throws \Involix\Messenger\Exception\MessengerException
      */
     public function __construct(
         string $recipientName,
@@ -88,9 +88,9 @@ class ReceiptTemplate extends AbstractTemplate
     }
 
     /**
-     *@throws \Kerox\Messenger\Exception\MessengerException
+     *@throws \Involix\Messenger\Exception\MessengerException
      *
-     * @return \Kerox\Messenger\Model\Message\Attachment\Template\ReceiptTemplate
+     * @return \Involix\Messenger\Model\Message\Attachment\Template\ReceiptTemplate
      */
     public static function create(
         string $recipientName,
@@ -104,7 +104,7 @@ class ReceiptTemplate extends AbstractTemplate
     }
 
     /**
-     * @return \Kerox\Messenger\Model\Message\Attachment\Template\ReceiptTemplate
+     * @return \Involix\Messenger\Model\Message\Attachment\Template\ReceiptTemplate
      */
     public function setTimestamp(string $timestamp): self
     {
@@ -114,9 +114,9 @@ class ReceiptTemplate extends AbstractTemplate
     }
 
     /**
-     *@throws \Kerox\Messenger\Exception\MessengerException
+     *@throws \Involix\Messenger\Exception\MessengerException
      *
-     * @return \Kerox\Messenger\Model\Message\Attachment\Template\ReceiptTemplate
+     * @return \Involix\Messenger\Model\Message\Attachment\Template\ReceiptTemplate
      */
     public function setOrderUrl(string $orderUrl): self
     {
@@ -128,7 +128,7 @@ class ReceiptTemplate extends AbstractTemplate
     }
 
     /**
-     * @return \Kerox\Messenger\Model\Message\Attachment\Template\ReceiptTemplate
+     * @return \Involix\Messenger\Model\Message\Attachment\Template\ReceiptTemplate
      */
     public function setAddress(Address $address): self
     {
@@ -138,9 +138,9 @@ class ReceiptTemplate extends AbstractTemplate
     }
 
     /**
-     * @param \Kerox\Messenger\Model\Message\Attachment\Template\Receipt\Adjustment[] $adjustments
+     * @param \Involix\Messenger\Model\Message\Attachment\Template\Receipt\Adjustment[] $adjustments
      *
-     * @return \Kerox\Messenger\Model\Message\Attachment\Template\ReceiptTemplate
+     * @return \Involix\Messenger\Model\Message\Attachment\Template\ReceiptTemplate
      */
     public function setAdjustments(array $adjustments): self
     {

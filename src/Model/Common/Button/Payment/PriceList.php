@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Kerox\Messenger\Model\Common\Button\Payment;
+namespace Involix\Messenger\Model\Common\Button\Payment;
 
 class PriceList implements \JsonSerializable
 {
@@ -26,7 +26,7 @@ class PriceList implements \JsonSerializable
     }
 
     /**
-     * @return \Kerox\Messenger\Model\Common\Button\Payment\PriceList
+     * @return \Involix\Messenger\Model\Common\Button\Payment\PriceList
      */
     public static function create(string $label, string $amount): self
     {

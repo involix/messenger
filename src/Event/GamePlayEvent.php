@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Kerox\Messenger\Event;
+namespace Involix\Messenger\Event;
 
-use Kerox\Messenger\Model\Callback\GamePlay;
+use Involix\Messenger\Model\Callback\GamePlay;
 
 class GamePlayEvent extends AbstractEvent
 {
@@ -16,7 +16,7 @@ class GamePlayEvent extends AbstractEvent
     protected $timestamp;
 
     /**
-     * @var \Kerox\Messenger\Model\Callback\GamePlay
+     * @var \Involix\Messenger\Model\Callback\GamePlay
      */
     protected $gamePlay;
 
@@ -47,7 +47,7 @@ class GamePlayEvent extends AbstractEvent
     }
 
     /**
-     * @return \Kerox\Messenger\Event\GamePlayEvent
+     * @return \Involix\Messenger\Event\GamePlayEvent
      */
     public static function create(array $payload)
     {

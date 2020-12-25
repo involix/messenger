@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Kerox\Messenger\Model\ProfileSettings;
+namespace Involix\Messenger\Model\ProfileSettings;
 
-use Kerox\Messenger\Helper\ValidatorTrait;
-use Kerox\Messenger\Model\Common\Button\AbstractButton;
+use Involix\Messenger\Helper\ValidatorTrait;
+use Involix\Messenger\Model\Common\Button\AbstractButton;
 
 class PersistentMenu implements ProfileSettingsInterface, \JsonSerializable
 {
@@ -22,14 +22,14 @@ class PersistentMenu implements ProfileSettingsInterface, \JsonSerializable
     protected $composerInputDisabled = false;
 
     /**
-     * @var \Kerox\Messenger\Model\Common\Button\AbstractButton[]
+     * @var \Involix\Messenger\Model\Common\Button\AbstractButton[]
      */
     protected $buttons = [];
 
     /**
      * PersistentMenu constructor.
      *
-     * @throws \Kerox\Messenger\Exception\MessengerException
+     * @throws \Involix\Messenger\Exception\MessengerException
      */
     public function __construct(string $locale = self::DEFAULT_LOCALE)
     {
@@ -41,9 +41,9 @@ class PersistentMenu implements ProfileSettingsInterface, \JsonSerializable
     }
 
     /**
-     * @throws \Kerox\Messenger\Exception\MessengerException
+     * @throws \Involix\Messenger\Exception\MessengerException
      *
-     * @return \Kerox\Messenger\Model\ProfileSettings\PersistentMenu
+     * @return \Involix\Messenger\Model\ProfileSettings\PersistentMenu
      */
     public static function create(string $locale = self::DEFAULT_LOCALE): self
     {
@@ -51,7 +51,7 @@ class PersistentMenu implements ProfileSettingsInterface, \JsonSerializable
     }
 
     /**
-     * @return \Kerox\Messenger\Model\ProfileSettings\PersistentMenu
+     * @return \Involix\Messenger\Model\ProfileSettings\PersistentMenu
      */
     public function setComposerInputDisabled(bool $composerInputDisabled): self
     {
@@ -61,11 +61,11 @@ class PersistentMenu implements ProfileSettingsInterface, \JsonSerializable
     }
 
     /**
-     * @param \Kerox\Messenger\Model\Common\Button\AbstractButton[] $buttons
+     * @param \Involix\Messenger\Model\Common\Button\AbstractButton[] $buttons
      *
-     * @throws \Kerox\Messenger\Exception\MessengerException
+     * @throws \Involix\Messenger\Exception\MessengerException
      *
-     * @return \Kerox\Messenger\Model\ProfileSettings\PersistentMenu
+     * @return \Involix\Messenger\Model\ProfileSettings\PersistentMenu
      */
     public function addButtons(array $buttons): self
     {

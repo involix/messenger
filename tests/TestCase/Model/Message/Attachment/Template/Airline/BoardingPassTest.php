@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace Kerox\Messenger\Tests\TestCase\Model\Message\Attachment\Template\Airline;
+namespace Involix\Messenger\Tests\TestCase\Model\Message\Attachment\Template\Airline;
 
-use Kerox\Messenger\Exception\MessengerException;
-use Kerox\Messenger\Model\Message\Attachment\Template\Airline\Airport;
-use Kerox\Messenger\Model\Message\Attachment\Template\Airline\BoardingPass;
-use Kerox\Messenger\Model\Message\Attachment\Template\Airline\FlightInfo;
-use Kerox\Messenger\Model\Message\Attachment\Template\Airline\FlightSchedule;
+use Involix\Messenger\Exception\MessengerException;
+use Involix\Messenger\Model\Message\Attachment\Template\Airline\Airport;
+use Involix\Messenger\Model\Message\Attachment\Template\Airline\BoardingPass;
+use Involix\Messenger\Model\Message\Attachment\Template\Airline\FlightInfo;
+use Involix\Messenger\Model\Message\Attachment\Template\Airline\FlightSchedule;
 use PHPUnit\Framework\TestCase;
 
 class BoardingPassTest extends TestCase

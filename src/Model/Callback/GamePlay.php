@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Kerox\Messenger\Model\Callback;
+namespace Involix\Messenger\Model\Callback;
 
 class GamePlay
 {
@@ -86,7 +86,7 @@ class GamePlay
     }
 
     /**
-     * @return \Kerox\Messenger\Model\Callback\GamePlay
+     * @return \Involix\Messenger\Model\Callback\GamePlay
      */
     public static function create(array $callbackData): self
     {

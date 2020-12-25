@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Kerox\Messenger\Response;
+namespace Involix\Messenger\Response;
 
-use Kerox\Messenger\Model\Data;
+use Involix\Messenger\Model\Data;
 
 class PersonaResponse extends AbstractResponse
 {
@@ -72,7 +72,7 @@ class PersonaResponse extends AbstractResponse
     }
 
     /**
-     * @return \Kerox\Messenger\Model\Data[]
+     * @return \Involix\Messenger\Model\Data[]
      */
     public function getData(): array
     {

@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Kerox\Messenger\Model\Message;
+namespace Involix\Messenger\Model\Message;
 
-use Kerox\Messenger\Exception\InvalidTypeException;
-use Kerox\Messenger\Helper\ValidatorTrait;
+use Involix\Messenger\Exception\InvalidTypeException;
+use Involix\Messenger\Helper\ValidatorTrait;
 
 class QuickReply implements \JsonSerializable
 {
@@ -53,7 +53,7 @@ class QuickReply implements \JsonSerializable
     /**
      * @throws \Exception
      *
-     * @return \Kerox\Messenger\Model\Message\QuickReply
+     * @return \Involix\Messenger\Model\Message\QuickReply
      */
     public static function create(string $contentType = self::CONTENT_TYPE_TEXT): self
     {
@@ -63,7 +63,7 @@ class QuickReply implements \JsonSerializable
     /**
      * @throws \Exception
      *
-     * @return \Kerox\Messenger\Model\Message\QuickReply
+     * @return \Involix\Messenger\Model\Message\QuickReply
      */
     public function setTitle(string $title): self
     {
@@ -78,7 +78,7 @@ class QuickReply implements \JsonSerializable
     /**
      * @throws \Exception
      *
-     * @return \Kerox\Messenger\Model\Message\QuickReply
+     * @return \Involix\Messenger\Model\Message\QuickReply
      */
     public function setPayload(string $payload): self
     {
@@ -93,7 +93,7 @@ class QuickReply implements \JsonSerializable
     /**
      * @throws \Exception
      *
-     * @return \Kerox\Messenger\Model\Message\QuickReply
+     * @return \Involix\Messenger\Model\Message\QuickReply
      */
     public function setImageUrl(string $imageUrl): self
     {
@@ -105,7 +105,7 @@ class QuickReply implements \JsonSerializable
     }
 
     /**
-     * @throws \Kerox\Messenger\Exception\InvalidTypeException
+     * @throws \Involix\Messenger\Exception\InvalidTypeException
      */
     private function isValidContentType(string $contentType): void
     {
@@ -126,7 +126,7 @@ class QuickReply implements \JsonSerializable
     }
 
     /**
-     * @throws \Kerox\Messenger\Exception\InvalidTypeException
+     * @throws \Involix\Messenger\Exception\InvalidTypeException
      */
     private function checkContentType(): void
     {

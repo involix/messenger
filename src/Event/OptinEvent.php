@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Kerox\Messenger\Event;
+namespace Involix\Messenger\Event;
 
-use Kerox\Messenger\Model\Callback\Optin;
+use Involix\Messenger\Model\Callback\Optin;
 
 class OptinEvent extends AbstractEvent
 {
@@ -16,7 +16,7 @@ class OptinEvent extends AbstractEvent
     protected $timestamp;
 
     /**
-     * @var \Kerox\Messenger\Model\Callback\Optin
+     * @var \Involix\Messenger\Model\Callback\Optin
      */
     protected $optin;
 
@@ -47,7 +47,7 @@ class OptinEvent extends AbstractEvent
     }
 
     /**
-     * @return \Kerox\Messenger\Event\OptinEvent
+     * @return \Involix\Messenger\Event\OptinEvent
      */
     public static function create(array $payload): self
     {

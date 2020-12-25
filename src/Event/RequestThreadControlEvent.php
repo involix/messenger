@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Kerox\Messenger\Event;
+namespace Involix\Messenger\Event;
 
-use Kerox\Messenger\Model\Callback\RequestThreadControl;
+use Involix\Messenger\Model\Callback\RequestThreadControl;
 
 class RequestThreadControlEvent extends AbstractEvent
 {
@@ -16,7 +16,7 @@ class RequestThreadControlEvent extends AbstractEvent
     protected $timestamp;
 
     /**
-     * @var \Kerox\Messenger\Model\Callback\RequestThreadControl
+     * @var \Involix\Messenger\Model\Callback\RequestThreadControl
      */
     protected $requestThreadControl;
 
@@ -51,7 +51,7 @@ class RequestThreadControlEvent extends AbstractEvent
     }
 
     /**
-     * @return \Kerox\Messenger\Event\RequestThreadControlEvent
+     * @return \Involix\Messenger\Event\RequestThreadControlEvent
      */
     public static function create(array $payload): self
     {

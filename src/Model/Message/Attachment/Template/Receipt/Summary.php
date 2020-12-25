@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Kerox\Messenger\Model\Message\Attachment\Template\Receipt;
+namespace Involix\Messenger\Model\Message\Attachment\Template\Receipt;
 
 class Summary implements \JsonSerializable
 {
@@ -35,7 +35,7 @@ class Summary implements \JsonSerializable
     }
 
     /**
-     * @return \Kerox\Messenger\Model\Message\Attachment\Template\Receipt\Summary
+     * @return \Involix\Messenger\Model\Message\Attachment\Template\Receipt\Summary
      */
     public static function create(float $totalCost): self
     {

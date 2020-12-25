@@ -2,16 +2,16 @@
 
 declare(strict_types=1);
 
-namespace Kerox\Messenger\Tests\TestCase\Model;
+namespace Involix\Messenger\Tests\TestCase\Model;
 
-use Kerox\Messenger\Exception\MessengerException;
-use Kerox\Messenger\Model\Common\Address;
-use Kerox\Messenger\Model\Message;
-use Kerox\Messenger\Model\Message\Attachment\Template\Element\ReceiptElement;
-use Kerox\Messenger\Model\Message\Attachment\Template\Receipt\Adjustment;
-use Kerox\Messenger\Model\Message\Attachment\Template\Receipt\Summary;
-use Kerox\Messenger\Model\Message\Attachment\Template\ReceiptTemplate;
-use Kerox\Messenger\Model\Message\QuickReply;
+use Involix\Messenger\Exception\MessengerException;
+use Involix\Messenger\Model\Common\Address;
+use Involix\Messenger\Model\Message;
+use Involix\Messenger\Model\Message\Attachment\Template\Element\ReceiptElement;
+use Involix\Messenger\Model\Message\Attachment\Template\Receipt\Adjustment;
+use Involix\Messenger\Model\Message\Attachment\Template\Receipt\Summary;
+use Involix\Messenger\Model\Message\Attachment\Template\ReceiptTemplate;
+use Involix\Messenger\Model\Message\QuickReply;
 use PHPUnit\Framework\TestCase;
 
 class MessageTest extends TestCase
@@ -107,14 +107,14 @@ class MessageTest extends TestCase
     public function testMessageWithInvalidArgument(): void
     {
         $this->expectException(MessengerException::class);
-        $this->expectExceptionMessage('message must be a string or an instance of Kerox\Messenger\Model\Message\AbstractAttachment.');
+        $this->expectExceptionMessage('message must be a string or an instance of Involix\Messenger\Model\Message\AbstractAttachment.');
         Message::create(123456);
     }
 
     public function testMessageWithInvalidQuickReplies(): void
     {
         $this->expectException(MessengerException::class);
-        $this->expectExceptionMessage('Array can only contain instance of Kerox\Messenger\Model\Message\QuickReply.');
+        $this->expectExceptionMessage('Array can only contain instance of Involix\Messenger\Model\Message\QuickReply.');
         Message::create('Pick a color:')
             ->setQuickReplies([
                 QuickReply::create()

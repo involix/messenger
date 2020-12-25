@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Kerox\Messenger\Event;
+namespace Involix\Messenger\Event;
 
-use Kerox\Messenger\Model\Callback\Reaction;
+use Involix\Messenger\Model\Callback\Reaction;
 
 class ReactionEvent extends AbstractEvent
 {
@@ -16,7 +16,7 @@ class ReactionEvent extends AbstractEvent
     protected $timestamp;
 
     /**
-     * @var \Kerox\Messenger\Model\Callback\Reaction
+     * @var \Involix\Messenger\Model\Callback\Reaction
      */
     protected $reaction;
 
@@ -44,7 +44,7 @@ class ReactionEvent extends AbstractEvent
     }
 
     /**
-     * @return \Kerox\Messenger\Event\ReactionEvent
+     * @return \Involix\Messenger\Event\ReactionEvent
      */
     public static function create(array $payload): self
     {

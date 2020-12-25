@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Kerox\Messenger\Tests\TestCase\Model;
+namespace Involix\Messenger\Tests\TestCase\Model;
 
-use Kerox\Messenger\Model\Data;
-use Kerox\Messenger\Model\Data\Value;
+use Involix\Messenger\Model\Data;
+use Involix\Messenger\Model\Data\Value;
 use PHPUnit\Framework\TestCase;
 
 class DataTest extends TestCase

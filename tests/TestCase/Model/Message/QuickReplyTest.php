@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Kerox\Messenger\Tests\TestCase\Model\Message;
+namespace Involix\Messenger\Tests\TestCase\Model\Message;
 
-use Kerox\Messenger\Exception\MessengerException;
-use Kerox\Messenger\Model\Message\QuickReply;
+use Involix\Messenger\Exception\MessengerException;
+use Involix\Messenger\Model\Message\QuickReply;
 use PHPUnit\Framework\TestCase;
 
 class QuickReplyTest extends TestCase

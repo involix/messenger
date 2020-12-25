@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Kerox\Messenger\Model\ProfileSettings;
+namespace Involix\Messenger\Model\ProfileSettings;
 
-use Kerox\Messenger\Helper\ValidatorTrait;
+use Involix\Messenger\Helper\ValidatorTrait;
 
 /**
  * @deprecated Since version 3.3.0 and will be removed in version 4.0.0.
@@ -29,7 +29,7 @@ class PaymentSettings implements \JsonSerializable
     protected $testUsers = [];
 
     /**
-     * @return \Kerox\Messenger\Model\ProfileSettings\PaymentSettings
+     * @return \Involix\Messenger\Model\ProfileSettings\PaymentSettings
      */
     public static function create(): self
     {
@@ -37,9 +37,9 @@ class PaymentSettings implements \JsonSerializable
     }
 
     /**
-     * @throws \Kerox\Messenger\Exception\MessengerException
+     * @throws \Involix\Messenger\Exception\MessengerException
      *
-     * @return \Kerox\Messenger\Model\ProfileSettings\PaymentSettings
+     * @return \Involix\Messenger\Model\ProfileSettings\PaymentSettings
      */
     public function setPrivacyUrl(string $privacyUrl): self
     {
@@ -50,7 +50,7 @@ class PaymentSettings implements \JsonSerializable
     }
 
     /**
-     * @return \Kerox\Messenger\Model\ProfileSettings\PaymentSettings
+     * @return \Involix\Messenger\Model\ProfileSettings\PaymentSettings
      */
     public function setPublicKey(string $publicKey): self
     {
@@ -60,7 +60,7 @@ class PaymentSettings implements \JsonSerializable
     }
 
     /**
-     * @return \Kerox\Messenger\Model\ProfileSettings\PaymentSettings
+     * @return \Involix\Messenger\Model\ProfileSettings\PaymentSettings
      */
     public function addTestUser(int $testUser): self
     {

@@ -2,17 +2,17 @@
 
 declare(strict_types=1);
 
-namespace Kerox\Messenger\Api;
+namespace Involix\Messenger\Api;
 
-use Kerox\Messenger\Exception\InvalidKeyException;
-use Kerox\Messenger\Request\UserRequest;
-use Kerox\Messenger\Response\UserResponse;
-use Kerox\Messenger\UserInterface;
+use Involix\Messenger\Exception\InvalidKeyException;
+use Involix\Messenger\Request\UserRequest;
+use Involix\Messenger\Response\UserResponse;
+use Involix\Messenger\UserInterface;
 
 class User extends AbstractApi implements UserInterface
 {
     /**
-     * @throws \Kerox\Messenger\Exception\MessengerException
+     * @throws \Involix\Messenger\Exception\MessengerException
      */
     public function profile(string $userId, array $fields = []): UserResponse
     {

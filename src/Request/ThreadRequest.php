@@ -2,14 +2,14 @@
 
 declare(strict_types=1);
 
-namespace Kerox\Messenger\Request;
+namespace Involix\Messenger\Request;
 
-use Kerox\Messenger\Model\ThreadControl;
+use Involix\Messenger\Model\ThreadControl;
 
 class ThreadRequest extends AbstractRequest
 {
     /**
-     * @var \Kerox\Messenger\Model\ThreadControl
+     * @var \Involix\Messenger\Model\ThreadControl
      */
     protected $threadControl;
 

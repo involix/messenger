@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Kerox\Messenger\Event;
+namespace Involix\Messenger\Event;
 
-use Kerox\Messenger\Model\Callback\TakeThreadControl;
+use Involix\Messenger\Model\Callback\TakeThreadControl;
 
 class TakeThreadControlEvent extends AbstractEvent
 {
@@ -16,7 +16,7 @@ class TakeThreadControlEvent extends AbstractEvent
     protected $timestamp;
 
     /**
-     * @var \Kerox\Messenger\Model\Callback\TakeThreadControl
+     * @var \Involix\Messenger\Model\Callback\TakeThreadControl
      */
     protected $takeThreadControl;
 
@@ -51,7 +51,7 @@ class TakeThreadControlEvent extends AbstractEvent
     }
 
     /**
-     * @return \Kerox\Messenger\Event\TakeThreadControlEvent
+     * @return \Involix\Messenger\Event\TakeThreadControlEvent
      */
     public static function create(array $payload): self
     {

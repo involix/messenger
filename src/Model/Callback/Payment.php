@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Kerox\Messenger\Model\Callback;
+namespace Involix\Messenger\Model\Callback;
 
-use Kerox\Messenger\Model\Callback\Payment\PaymentCredential;
-use Kerox\Messenger\Model\Callback\Payment\RequestedUserInfo;
-use Kerox\Messenger\Model\Common\Address;
+use Involix\Messenger\Model\Callback\Payment\PaymentCredential;
+use Involix\Messenger\Model\Callback\Payment\RequestedUserInfo;
+use Involix\Messenger\Model\Common\Address;
 
 class Payment
 {
@@ -16,12 +16,12 @@ class Payment
     protected $payload;
 
     /**
-     * @var \Kerox\Messenger\Model\Callback\Payment\RequestedUserInfo
+     * @var \Involix\Messenger\Model\Callback\Payment\RequestedUserInfo
      */
     protected $requestedUserInfo;
 
     /**
-     * @var \Kerox\Messenger\Model\Callback\Payment\PaymentCredential
+     * @var \Involix\Messenger\Model\Callback\Payment\PaymentCredential
      */
     protected $paymentCredential;
 
@@ -88,7 +88,7 @@ class Payment
     }
 
     /**
-     * @return \Kerox\Messenger\Model\Callback\Payment
+     * @return \Involix\Messenger\Model\Callback\Payment
      */
     public static function create(array $callbackData): self
     {

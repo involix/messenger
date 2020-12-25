@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Kerox\Messenger\Api;
+namespace Involix\Messenger\Api;
 
-use Kerox\Messenger\Model\ThreadControl;
-use Kerox\Messenger\Request\ThreadRequest;
-use Kerox\Messenger\Response\ThreadResponse;
+use Involix\Messenger\Model\ThreadControl;
+use Involix\Messenger\Request\ThreadRequest;
+use Involix\Messenger\Response\ThreadResponse;
 
 class Thread extends AbstractApi
 {

@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Kerox\Messenger\Model\Callback;
+namespace Involix\Messenger\Model\Callback;
 
-use Kerox\Messenger\Event\EventFactory;
+use Involix\Messenger\Event\EventFactory;
 
 class Entry
 {
@@ -54,7 +54,7 @@ class Entry
     }
 
     /**
-     * @return \Kerox\Messenger\Model\Callback\Entry
+     * @return \Involix\Messenger\Model\Callback\Entry
      */
     public static function create(array $entry): self
     {

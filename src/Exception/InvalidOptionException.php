@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Kerox\Messenger\Exception;
+namespace Involix\Messenger\Exception;
 
 class InvalidOptionException extends MessengerException
 {

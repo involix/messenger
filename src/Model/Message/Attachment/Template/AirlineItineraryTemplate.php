@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Kerox\Messenger\Model\Message\Attachment\Template;
+namespace Involix\Messenger\Model\Message\Attachment\Template;
 
-use Kerox\Messenger\Model\Message\Attachment\AbstractTemplate;
+use Involix\Messenger\Model\Message\Attachment\AbstractTemplate;
 
 class AirlineItineraryTemplate extends AbstractAirlineTemplate
 {
@@ -19,17 +19,17 @@ class AirlineItineraryTemplate extends AbstractAirlineTemplate
     protected $pnrNumber;
 
     /**
-     * @var \Kerox\Messenger\Model\Message\Attachment\Template\Airline\PassengerInfo[]
+     * @var \Involix\Messenger\Model\Message\Attachment\Template\Airline\PassengerInfo[]
      */
     protected $passengerInfo;
 
     /**
-     * @var \Kerox\Messenger\Model\Message\Attachment\Template\Airline\ExtendedFlightInfo[]
+     * @var \Involix\Messenger\Model\Message\Attachment\Template\Airline\ExtendedFlightInfo[]
      */
     protected $flightInfo;
 
     /**
-     * @var \Kerox\Messenger\Model\Message\Attachment\Template\Airline\PassengerSegmentInfo[]
+     * @var \Involix\Messenger\Model\Message\Attachment\Template\Airline\PassengerSegmentInfo[]
      */
     protected $passengerSegmentInfo;
 
@@ -61,9 +61,9 @@ class AirlineItineraryTemplate extends AbstractAirlineTemplate
     /**
      * AirlineItinerary constructor.
      *
-     * @param \Kerox\Messenger\Model\Message\Attachment\Template\Airline\PassengerInfo[]        $passengerInfo
-     * @param \Kerox\Messenger\Model\Message\Attachment\Template\Airline\ExtendedFlightInfo[]   $flightInfo
-     * @param \Kerox\Messenger\Model\Message\Attachment\Template\Airline\PassengerSegmentInfo[] $passengerSegmentInfo
+     * @param \Involix\Messenger\Model\Message\Attachment\Template\Airline\PassengerInfo[]        $passengerInfo
+     * @param \Involix\Messenger\Model\Message\Attachment\Template\Airline\ExtendedFlightInfo[]   $flightInfo
+     * @param \Involix\Messenger\Model\Message\Attachment\Template\Airline\PassengerSegmentInfo[] $passengerSegmentInfo
      */
     public function __construct(
         string $introMessage,
@@ -87,7 +87,7 @@ class AirlineItineraryTemplate extends AbstractAirlineTemplate
     }
 
     /**
-     * @return \Kerox\Messenger\Model\Message\Attachment\Template\AirlineItineraryTemplate
+     * @return \Involix\Messenger\Model\Message\Attachment\Template\AirlineItineraryTemplate
      */
     public static function create(
         string $introMessage,
@@ -114,9 +114,9 @@ class AirlineItineraryTemplate extends AbstractAirlineTemplate
     /**
      * @param string $currency
      *
-     *@throws \Kerox\Messenger\Exception\MessengerException
+     *@throws \Involix\Messenger\Exception\MessengerException
      *
-     *@return \Kerox\Messenger\Model\Message\Attachment\Template\AirlineItineraryTemplate
+     *@return \Involix\Messenger\Model\Message\Attachment\Template\AirlineItineraryTemplate
      */
     public function addPriceInfo(string $title, string $amount, ?string $currency = null): self
     {
@@ -138,7 +138,7 @@ class AirlineItineraryTemplate extends AbstractAirlineTemplate
     }
 
     /**
-     * @return \Kerox\Messenger\Model\Message\Attachment\Template\AirlineItineraryTemplate
+     * @return \Involix\Messenger\Model\Message\Attachment\Template\AirlineItineraryTemplate
      */
     public function setBasePrice(string $basePrice): self
     {
@@ -148,7 +148,7 @@ class AirlineItineraryTemplate extends AbstractAirlineTemplate
     }
 
     /**
-     * @return \Kerox\Messenger\Model\Message\Attachment\Template\AirlineItineraryTemplate
+     * @return \Involix\Messenger\Model\Message\Attachment\Template\AirlineItineraryTemplate
      */
     public function setTax(string $tax): self
     {

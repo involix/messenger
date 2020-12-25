@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Kerox\Messenger\Model\Callback;
+namespace Involix\Messenger\Model\Callback;
 
 class PolicyEnforcement
 {
@@ -36,7 +36,7 @@ class PolicyEnforcement
     }
 
     /**
-     * @return \Kerox\Messenger\Model\Callback\PolicyEnforcement
+     * @return \Involix\Messenger\Model\Callback\PolicyEnforcement
      */
     public static function create(array $callbackData): self
     {

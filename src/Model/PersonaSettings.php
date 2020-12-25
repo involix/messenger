@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Kerox\Messenger\Model;
+namespace Involix\Messenger\Model;
 
-use Kerox\Messenger\Helper\ValidatorTrait;
+use Involix\Messenger\Helper\ValidatorTrait;
 
 class PersonaSettings implements \JsonSerializable
 {
@@ -32,7 +32,7 @@ class PersonaSettings implements \JsonSerializable
     }
 
     /**
-     * @return \Kerox\Messenger\Model\PersonaSettings
+     * @return \Involix\Messenger\Model\PersonaSettings
      */
     public static function create(string $name, string $profilePictureUrl): self
     {

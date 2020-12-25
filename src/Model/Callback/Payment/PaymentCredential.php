@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Kerox\Messenger\Model\Callback\Payment;
+namespace Involix\Messenger\Model\Callback\Payment;
 
 class PaymentCredential
 {
@@ -103,7 +103,7 @@ class PaymentCredential
     }
 
     /**
-     * @return \Kerox\Messenger\Model\Callback\Payment\PaymentCredential
+     * @return \Involix\Messenger\Model\Callback\Payment\PaymentCredential
      */
     public static function create(array $callbackData): self
     {

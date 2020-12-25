@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Kerox\Messenger\Model\Callback;
+namespace Involix\Messenger\Model\Callback;
 
 class PassThreadControl
 {
@@ -36,7 +36,7 @@ class PassThreadControl
     }
 
     /**
-     * @return \Kerox\Messenger\Model\Callback\PassThreadControl
+     * @return \Involix\Messenger\Model\Callback\PassThreadControl
      */
     public static function create(array $callbackData): self
     {

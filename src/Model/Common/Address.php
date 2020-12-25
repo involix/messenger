@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Kerox\Messenger\Model\Common;
+namespace Involix\Messenger\Model\Common;
 
 class Address implements \JsonSerializable
 {
@@ -64,7 +64,7 @@ class Address implements \JsonSerializable
     }
 
     /**
-     * @return \Kerox\Messenger\Model\Common\Address
+     * @return \Involix\Messenger\Model\Common\Address
      */
     public static function create(
         string $street,
@@ -77,7 +77,7 @@ class Address implements \JsonSerializable
     }
 
     /**
-     * @return \Kerox\Messenger\Model\Common\Address
+     * @return \Involix\Messenger\Model\Common\Address
      */
     public function setName(string $name): self
     {
@@ -168,7 +168,7 @@ class Address implements \JsonSerializable
     }
 
     /**
-     * @return \Kerox\Messenger\Model\Common\Address
+     * @return \Involix\Messenger\Model\Common\Address
      */
     public static function fromPayload(array $payload): self
     {

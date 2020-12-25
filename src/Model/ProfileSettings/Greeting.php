@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Kerox\Messenger\Model\ProfileSettings;
+namespace Involix\Messenger\Model\ProfileSettings;
 
-use Kerox\Messenger\Helper\ValidatorTrait;
+use Involix\Messenger\Helper\ValidatorTrait;
 
 class Greeting implements ProfileSettingsInterface, \JsonSerializable
 {
@@ -40,7 +40,7 @@ class Greeting implements ProfileSettingsInterface, \JsonSerializable
     /**
      * @throws \Exception
      *
-     * @return \Kerox\Messenger\Model\ProfileSettings\Greeting
+     * @return \Involix\Messenger\Model\ProfileSettings\Greeting
      */
     public static function create(string $text, string $locale = self::DEFAULT_LOCALE): self
     {

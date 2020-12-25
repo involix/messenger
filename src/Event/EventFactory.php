@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Kerox\Messenger\Event;
+namespace Involix\Messenger\Event;
 
 class EventFactory
 {
@@ -27,7 +27,7 @@ class EventFactory
     ];
 
     /**
-     * @return \Kerox\Messenger\Event\AbstractEvent
+     * @return \Involix\Messenger\Event\AbstractEvent
      */
     public static function create(array $payload): AbstractEvent
     {
